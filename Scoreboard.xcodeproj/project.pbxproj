@@ -21,9 +21,14 @@
 		08DC67D71DD0158400FD688C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */; };
 		08DC67E21DD0158400FD688C /* ScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC67E11DD0158400FD688C /* ScoreboardTests.swift */; };
 		08DC67ED1DD0158400FD688C /* ScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC67EC1DD0158400FD688C /* ScoreboardUITests.swift */; };
+		08EB6E541DDFD02E0043CFA9 /* PusherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */; };
+		08EB6E561DDFD04D0043CFA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EB6E551DDFD04D0043CFA9 /* Constants.swift */; };
 		08F087BF1DD14A6C006E5963 /* ScoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F087BE1DD14A6C006E5963 /* ScoreListTableViewCell.swift */; };
 		08F087C11DD14BAB006E5963 /* PenaltyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F087C01DD14BAB006E5963 /* PenaltyListViewController.swift */; };
 		08F087C31DD14BFE006E5963 /* PenaltyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F087C21DD14BFE006E5963 /* PenaltyListTableViewCell.swift */; };
+		2E080F011A63B2F611321BF4 /* Pods_Scoreboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67422FD65D35FC9CD1E51A3E /* Pods_Scoreboard.framework */; };
+		6150424D802DF74CEFDE134F /* Pods_ScoreboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4FDD987B3DD84C400408C5 /* Pods_ScoreboardTests.framework */; };
+		6181E22E9E500DC3B062E3C3 /* Pods_ScoreboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1164CA3C95F7123926375574 /* Pods_ScoreboardUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +69,20 @@
 		08DC67E81DD0158400FD688C /* ScoreboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DC67EC1DD0158400FD688C /* ScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardUITests.swift; sourceTree = "<group>"; };
 		08DC67EE1DD0158400FD688C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherManager.swift; sourceTree = "<group>"; };
+		08EB6E551DDFD04D0043CFA9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		08F087BE1DD14A6C006E5963 /* ScoreListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreListTableViewCell.swift; sourceTree = "<group>"; };
 		08F087C01DD14BAB006E5963 /* PenaltyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenaltyListViewController.swift; sourceTree = "<group>"; };
 		08F087C21DD14BFE006E5963 /* PenaltyListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenaltyListTableViewCell.swift; sourceTree = "<group>"; };
+		1164CA3C95F7123926375574 /* Pods_ScoreboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoreboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBB742F0C2B27800DA38D01 /* Pods-Scoreboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoreboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scoreboard/Pods-Scoreboard.release.xcconfig"; sourceTree = "<group>"; };
+		3B4FDD987B3DD84C400408C5 /* Pods_ScoreboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoreboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		404755C3A2A8A1A6004B241A /* Pods-ScoreboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScoreboardTests/Pods-ScoreboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		500103741FFD797ECCDDAFC2 /* Pods-ScoreboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScoreboardTests/Pods-ScoreboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		65A304582248724A5A7DF063 /* Pods-ScoreboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreboardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScoreboardUITests/Pods-ScoreboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67422FD65D35FC9CD1E51A3E /* Pods_Scoreboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scoreboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D255264F93151359986B038 /* Pods-ScoreboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreboardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScoreboardUITests/Pods-ScoreboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90B036ADD5DC301BCF30F1E2 /* Pods-Scoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoreboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scoreboard/Pods-Scoreboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E080F011A63B2F611321BF4 /* Pods_Scoreboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6150424D802DF74CEFDE134F /* Pods_ScoreboardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +106,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6181E22E9E500DC3B062E3C3 /* Pods_ScoreboardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006DA2DAF177F2428C2E3EDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67422FD65D35FC9CD1E51A3E /* Pods_Scoreboard.framework */,
+				3B4FDD987B3DD84C400408C5 /* Pods_ScoreboardTests.framework */,
+				1164CA3C95F7123926375574 /* Pods_ScoreboardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		081681291DD0261700A53DE3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +162,8 @@
 				08DC67E01DD0158400FD688C /* ScoreboardTests */,
 				08DC67EB1DD0158400FD688C /* ScoreboardUITests */,
 				08DC67CA1DD0158400FD688C /* Products */,
+				D56EC017AA9F5A6B63F5C0B3 /* Pods */,
+				006DA2DAF177F2428C2E3EDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +180,7 @@
 		08DC67CB1DD0158400FD688C /* Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				08EB6E571DDFD0610043CFA9 /* Utility */,
 				0888BA071DD159D300C2B1F9 /* Models */,
 				0816812A1DD0265E00A53DE3 /* TableCells */,
 				081681291DD0261700A53DE3 /* ViewControllers */,
@@ -179,6 +211,28 @@
 			path = ScoreboardUITests;
 			sourceTree = "<group>";
 		};
+		08EB6E571DDFD0610043CFA9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */,
+				08EB6E551DDFD04D0043CFA9 /* Constants.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		D56EC017AA9F5A6B63F5C0B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90B036ADD5DC301BCF30F1E2 /* Pods-Scoreboard.debug.xcconfig */,
+				2EBB742F0C2B27800DA38D01 /* Pods-Scoreboard.release.xcconfig */,
+				404755C3A2A8A1A6004B241A /* Pods-ScoreboardTests.debug.xcconfig */,
+				500103741FFD797ECCDDAFC2 /* Pods-ScoreboardTests.release.xcconfig */,
+				8D255264F93151359986B038 /* Pods-ScoreboardUITests.debug.xcconfig */,
+				65A304582248724A5A7DF063 /* Pods-ScoreboardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08DC67F11DD0158400FD688C /* Build configuration list for PBXNativeTarget "Scoreboard" */;
 			buildPhases = (
+				010C495529B15475A1A85EA8 /* [CP] Check Pods Manifest.lock */,
 				08DC67C51DD0158400FD688C /* Sources */,
 				08DC67C61DD0158400FD688C /* Frameworks */,
 				08DC67C71DD0158400FD688C /* Resources */,
+				6CAF292874CFBDEC6977368D /* [CP] Embed Pods Frameworks */,
+				B15D4C115C25377EA4BE5D18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08DC67F41DD0158400FD688C /* Build configuration list for PBXNativeTarget "ScoreboardTests" */;
 			buildPhases = (
+				6BEF46D9A236469E61F9FD1E /* [CP] Check Pods Manifest.lock */,
 				08DC67D91DD0158400FD688C /* Sources */,
 				08DC67DA1DD0158400FD688C /* Frameworks */,
 				08DC67DB1DD0158400FD688C /* Resources */,
+				3869CD8C1051C0FDB549C6E5 /* [CP] Embed Pods Frameworks */,
+				52AD8785255D7A22843D9D5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08DC67F71DD0158400FD688C /* Build configuration list for PBXNativeTarget "ScoreboardUITests" */;
 			buildPhases = (
+				106EA1CF9B0590293FEE9C34 /* [CP] Check Pods Manifest.lock */,
 				08DC67E41DD0158400FD688C /* Sources */,
 				08DC67E51DD0158400FD688C /* Frameworks */,
 				08DC67E61DD0158400FD688C /* Resources */,
+				40CB8D7AE9A95DC5F68D1628 /* [CP] Embed Pods Frameworks */,
+				049F0D3A0BD9C3E96784260E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +374,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		010C495529B15475A1A85EA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		049F0D3A0BD9C3E96784260E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoreboardUITests/Pods-ScoreboardUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		106EA1CF9B0590293FEE9C34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3869CD8C1051C0FDB549C6E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoreboardTests/Pods-ScoreboardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40CB8D7AE9A95DC5F68D1628 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoreboardUITests/Pods-ScoreboardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52AD8785255D7A22843D9D5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoreboardTests/Pods-ScoreboardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEF46D9A236469E61F9FD1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CAF292874CFBDEC6977368D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scoreboard/Pods-Scoreboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15D4C115C25377EA4BE5D18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scoreboard/Pods-Scoreboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08DC67C51DD0158400FD688C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -326,6 +527,8 @@
 				08F087C11DD14BAB006E5963 /* PenaltyListViewController.swift in Sources */,
 				08F087C31DD14BFE006E5963 /* PenaltyListTableViewCell.swift in Sources */,
 				08F087BF1DD14A6C006E5963 /* ScoreListTableViewCell.swift in Sources */,
+				08EB6E541DDFD02E0043CFA9 /* PusherManager.swift in Sources */,
+				08EB6E561DDFD04D0043CFA9 /* Constants.swift in Sources */,
 				081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */,
 				08AB58051DD172D100E354E4 /* PenaltyModel.swift in Sources */,
 			);
@@ -400,6 +603,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -450,6 +654,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -477,7 +682,9 @@
 		};
 		08DC67F21DD0158400FD688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B036ADD5DC301BCF30F1E2 /* Pods-Scoreboard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 735DFD3LP6;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
@@ -490,7 +697,9 @@
 		};
 		08DC67F31DD0158400FD688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EBB742F0C2B27800DA38D01 /* Pods-Scoreboard.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 735DFD3LP6;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
@@ -503,6 +712,7 @@
 		};
 		08DC67F51DD0158400FD688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404755C3A2A8A1A6004B241A /* Pods-ScoreboardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +728,7 @@
 		};
 		08DC67F61DD0158400FD688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500103741FFD797ECCDDAFC2 /* Pods-ScoreboardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +744,7 @@
 		};
 		08DC67F81DD0158400FD688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D255264F93151359986B038 /* Pods-ScoreboardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 735DFD3LP6;
@@ -547,6 +759,7 @@
 		};
 		08DC67F91DD0158400FD688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A304582248724A5A7DF063 /* Pods-ScoreboardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 735DFD3LP6;
