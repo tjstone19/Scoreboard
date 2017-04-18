@@ -2,9 +2,7 @@
 //  PenaltyListViewController.swift
 //  Scoreboard
 //
-//  Created by T.J. Stone on 11/7/16.
-//  Copyright © 2016 T.J. Stone. All rights reserved.
-//
+
 
 import UIKit
 
@@ -12,6 +10,16 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
 
     
     @IBOutlet weak var penaltyTable: UITableView!
+    
+    // Determines if penalty list is for home or away team
+    var isHome: Bool = true
+    
+    // Set by the scoreboard VC
+    var pusherManager: PusherManager?
+    
+    // Contains penalty data
+    var penaltys: [PenaltyModel] = [PenaltyModel]()
+    
     
     /* Player # and name or “Bench”
      Type of penalty (e.g. minor, major, etc)
@@ -25,6 +33,7 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        updateUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,23 +41,73 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
+    // Called when pusher manager receives a penalty event
+    func updateUI() {
+        if isHome {
+            penaltys = (pusherManager?.homePenaltys)!
+        }
+        else {
+            penaltys = (pusherManager?.awayPenaltys)!
+        }
+        
+        penaltys.sort(by:
+            {
+                let dateForm: DateFormatter = DateFormatter()
+                dateForm.dateFormat = "mm:ss"
+                let calendar: Calendar = Calendar.current
+                
+                
+                if Int($0.period!)! == Int($1.period!)! {
+                    var firstComp = calendar.component(.minute,
+                                                       from: dateForm.date(from: $0.time!)!)
+                    var secondComp = calendar.component(.minute,
+                                                        from: dateForm.date(from: $1.time!)!)
+                    
+                    if firstComp == secondComp {
+                        firstComp = calendar.component(.second,
+                                                       from: dateForm.date(from: $0.time!)!)
+                        secondComp = calendar.component(.second,
+                                                        from: dateForm.date(from: $1.time!)!)
+                        return firstComp < secondComp
+                    }
+                    else  {
+                        return firstComp < secondComp
+                    }
+                }
+                else {
+                    return Int($0.period!)! < Int($1.period!)!
+                }
+        })
+        
+        penaltyTable.reloadData()
+    }
+    
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return penaltys.count
     }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: PenaltyListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "penaltyCell", for: indexPath) as! PenaltyListTableViewCell
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: PenaltyListTableViewCell =
+            tableView.dequeueReusableCell(withIdentifier: "penaltyCell",
+                                          for: indexPath) as! PenaltyListTableViewCell
         
         // Configure the cell...
+        cell.periodLabel.text = penaltys[indexPath.row].period
+        cell.timeLabel.text = penaltys[indexPath.row].time
+        cell.playerLabel.text = penaltys[indexPath.row].player
+        cell.typeLabel.text = penaltys[indexPath.row].type
+        cell.lengthLabel.text = penaltys[indexPath.row].length
         
         return cell
     }

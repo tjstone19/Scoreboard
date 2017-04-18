@@ -2,9 +2,7 @@
 //  GamesListViewController.swift
 //  Scoreboard
 //
-//  Created by T.J. Stone on 11/6/16.
-//  Copyright © 2016 T.J. Stone. All rights reserved.
-//
+
 
 import UIKit
 
@@ -13,10 +11,30 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     // displays the list of games currently under way
     @IBOutlet weak var gamesTable: UITableView!
     
+    // Manages the connection with pusher
+    var pusherManager: PusherManager!
+    
+    // Updated by Pusher Manager when game data is received.
+    var games: [GameModel] = [GameModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Games"
+        
+        gamesTable.estimatedRowHeight = 150.0
+        gamesTable.rowHeight = UITableViewAutomaticDimension
 
         // Do any additional setup after loading the view.
+        if pusherManager != nil {
+            pusherManager.updateFunction = updateUI
+        }
+        else {
+            pusherManager = PusherManager()
+            pusherManager.establishConnection()
+            pusherManager.connectToTTS()
+            pusherManager.updateFunction = updateUI
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,25 +42,69 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        // Deselect row
+        if gamesTable.indexPathForSelectedRow != nil {
+             self.gamesTable.deselectRow(at: gamesTable.indexPathForSelectedRow!,
+                                         animated: true)
+        }
+       
+    }
+    
+    // Called by pusher manager when an update is received.
+    func updateUI() {
+        self.games = pusherManager.gamesArray
+        
+        games.sort(by:
+        {
+           return Int($0.gameId!)! > Int($1.gameId!)!
+        })
+        
+        self.gamesTable.reloadData()
+    }
+    
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if games.count == 0 {
+            return 1
+        }
+        return games.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: GameTableViewCell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as! GameTableViewCell
-     
-        // Configure the cell...
-     
-        return cell
+        
+        
+        if games.count == 0 {
+            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) 
+            
+            cell.textLabel?.text = "No Games Available"
+            
+            return cell
+        }
+        else {
+            let cell: GameCell = tableView.dequeueReusableCell(withIdentifier: "aGameCell", for: indexPath) as! GameCell
+            
+            // Configure the cell...
+            
+            cell.rinkLabel.text = games[indexPath.row].rink
+            cell.homeTeamLabel.text = games[indexPath.row].homeTeam
+            cell.awayTeamLabel.text = games[indexPath.row].awayTeam
+            cell.homeScoreLabel.text = games[indexPath.row].homeScore
+            cell.awayScoreLabel.text = games[indexPath.row].awayScore
+            
+            cell.homeLogo.image = Constants.getLogo(team: games[indexPath.row].homeTeam!)
+            cell.awayLogo.image = Constants.getLogo(team: games[indexPath.row].awayTeam!)
+            
+            return cell
+        }
     }
     
     
@@ -81,14 +143,20 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
      }
      */
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        if segue.identifier == "gameToScoreboard" {
+            let dest = segue.destination as! ScoreboardViewController
+            let selectedGameIndex: IndexPath = self.gamesTable.indexPathForSelectedRow!
+            dest.currentGame = games[selectedGameIndex.row]
+            pusherManager.currentGame = games[selectedGameIndex.row]
+            self.pusherManager.updateFunction = dest.updateUI
+            dest.pusherManager = self.pusherManager
+        }
      }
-     */
-    
 }

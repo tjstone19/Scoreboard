@@ -1,16 +1,18 @@
 //
-//  GameTableViewCell.swift
+//  RosterTableViewCell.swift
 //  Scoreboard
-//
+
 
 import UIKit
 
-class GameTableViewCell: UITableViewCell {
+class RosterTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var gameIdLabel: UILabel!
-    @IBOutlet weak var rinkLabel: UILabel!
-    @IBOutlet weak var homeTeamLabel: UILabel!
-    @IBOutlet weak var awayTeamLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var goalsLabel: UILabel!
+    @IBOutlet weak var assistsLabel: UILabel!
+    @IBOutlet weak var pimsLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

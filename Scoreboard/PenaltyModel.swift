@@ -2,37 +2,32 @@
 //  PenaltyModel.swift
 //  Scoreboard
 //
-//  Created by T.J. Stone on 11/7/16.
-//  Copyright © 2016 T.J. Stone. All rights reserved.
-//
+
 
 import Foundation
 
 
 
 struct PenaltyModel {
-    var period: Int?
+    var period: String?
     var time: String?
     var type: String?
     var length: String?
-    var off: String?
-    var player: PlayerModel?
+    var player: String?
     
     init() {
-        period = 1
+        period = ""
         time = ""
         type = ""
         length = ""
-        off = ""
-        player = PlayerModel()
+        player = ""
     }
     
-    init(aPeriod: Int, aTime: String, aType: String, penLen: String, offIce: String, aPlayer: PlayerModel) {
+    init(aPeriod: String, aTime: String, aType: String, aLength: String, aPlayer: String) {
         period = aPeriod
         time = aTime
         type = aType
-        length = penLen
-        off = offIce
+        length = aLength
         player = aPlayer
     }
 }

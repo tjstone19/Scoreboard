@@ -2,32 +2,40 @@
 //  ScoreModel.swift
 //  Scoreboard
 //
-//  Created by T.J. Stone on 11/7/16.
-//  Copyright © 2016 T.J. Stone. All rights reserved.
-//
 
 import Foundation
 
 struct ScoreModel {
-    var period: Int?
+    var period: String?
     var time: String?
-    var goalScorer: PlayerModel?
-    var assist1: PlayerModel?
-    var assist2: PlayerModel?
+    var goalScorer: String?
+    var assist1: String?
+    var assist2: String?
+    var homeScore: String?
+    var awayScore: String?
+    var winningTeam: String?
     
     init() {
-        period = 0
+        period = ""
         time = ""
-        goalScorer = PlayerModel()
-        assist1 = PlayerModel()
-        assist2 = PlayerModel()
+        goalScorer = ""
+        assist1 = ""
+        assist2 = ""
+        homeScore = ""
+        awayScore = ""
+        winningTeam = ""
     }
     
-    init(aPeriod: Int, aTime: String, goal: PlayerModel, asst1: PlayerModel, asst2: PlayerModel) {
+    init(aPeriod: String, aTime: String, goal: String,
+         asst1: String, asst2: String, hmScore: String,
+         awyScore: String, winTeam: String) {
         period = aPeriod
         time = aTime
         goalScorer = goal
         assist1 = asst1
         assist2 = asst2
+        homeScore = hmScore
+        awayScore = awyScore
+        winningTeam = winTeam
     }
 }

@@ -2,19 +2,15 @@
 //  PenaltyListTableViewCell.swift
 //  Scoreboard
 //
-//  Created by T.J. Stone on 11/7/16.
-//  Copyright © 2016 T.J. Stone. All rights reserved.
-//
 
 import UIKit
 
 class PenaltyListTableViewCell: UITableViewCell {
     @IBOutlet weak var periodLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var playerLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var lengthLabel: UILabel!
-    @IBOutlet weak var offLabel: UILabel!
-    @IBOutlet weak var playerLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

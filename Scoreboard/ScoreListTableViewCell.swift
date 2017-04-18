@@ -1,10 +1,7 @@
 //
 //  ScoreListTableViewCell.swift
 //  Scoreboard
-//
-//  Created by T.J. Stone on 11/7/16.
-//  Copyright © 2016 T.J. Stone. All rights reserved.
-//
+
 
 import UIKit
 
@@ -13,7 +10,8 @@ class ScoreListTableViewCell: UITableViewCell {
     @IBOutlet weak var periodLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var goalScorerLabel: UILabel!
-    @IBOutlet weak var assistLabel: UILabel!
+    @IBOutlet weak var assist1Label: UILabel!
+    @IBOutlet weak var assist2Label: UILabel!
     
     
     override func awakeFromNib() {

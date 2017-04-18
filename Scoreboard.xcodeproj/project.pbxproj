@@ -11,10 +11,30 @@
 		081681281DD025B700A53DE3 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081681271DD025B700A53DE3 /* GamesListViewController.swift */; };
 		0816812C1DD0268300A53DE3 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */; };
 		081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */; };
+		08849B071DE8E5F800DE41DB /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08849B061DE8E5F800DE41DB /* RosterViewController.swift */; };
+		08849B091DE8E7D300DE41DB /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */; };
 		0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0888BA081DD159ED00C2B1F9 /* GameModel.swift */; };
+		0889CFA61E00D8CD00B97075 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFA51E00D8CD00B97075 /* digital-7.ttf */; };
+		0889CFB51E00DEE300B97075 /* blue-devils-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFA81E00DEE300B97075 /* blue-devils-logo.jpg */; };
+		0889CFB61E00DEE300B97075 /* capital-thunder-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFA91E00DEE300B97075 /* capital-thunder-logo.gif */; };
+		0889CFB71E00DEE300B97075 /* cougars-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFAA1E00DEE300B97075 /* cougars-logo.jpg */; };
+		0889CFB81E00DEE300B97075 /* fresno-monsters-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFAB1E00DEE300B97075 /* fresno-monsters-logo.jpg */; };
+		0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFAC1E00DEE300B97075 /* jr-sharks-logo.jpg */; };
+		0889CFBA1E00DEE300B97075 /* oakland-bears-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFAD1E00DEE300B97075 /* oakland-bears-logo.jpg */; };
+		0889CFBB1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFAE1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg */; };
+		0889CFBC1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFAF1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif */; };
+		0889CFBD1E00DEE300B97075 /* santa-rosa-flyers-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFB01E00DEE300B97075 /* santa-rosa-flyers-logo.jpg */; };
+		0889CFBE1E00DEE300B97075 /* sf-sabercats-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFB11E00DEE300B97075 /* sf-sabercats-logo.png */; };
+		0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFB21E00DEE300B97075 /* stockton-colts-logo.gif */; };
+		0889CFC01E00DEE300B97075 /* tahoe-grizzlies-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFB31E00DEE300B97075 /* tahoe-grizzlies-logo.jpg */; };
+		0889CFC11E00DEE300B97075 /* vacaville-jets-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0889CFB41E00DEE300B97075 /* vacaville-jets-logo.jpg */; };
+		0889CFC71E00F7E700B97075 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889CFC61E00F7E700B97075 /* GameCell.swift */; };
+		089089CA1DE29DF100EAEDB4 /* ScoreboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089089C91DE29DF100EAEDB4 /* ScoreboardModel.swift */; };
+		0895A3591E03A23000B2FC8B /* goal-horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0895A3581E03A23000B2FC8B /* goal-horn.mp3 */; };
 		08AB57C51DD16B7A00E354E4 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB57C41DD16B7A00E354E4 /* ScoreModel.swift */; };
 		08AB57C71DD16C1800E354E4 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB57C61DD16C1800E354E4 /* PlayerModel.swift */; };
 		08AB58051DD172D100E354E4 /* PenaltyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB58041DD172D100E354E4 /* PenaltyModel.swift */; };
+		08D935151DE4F813002A63DE /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D935141DE4F813002A63DE /* Encryptor.swift */; };
 		08DC67CD1DD0158400FD688C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC67CC1DD0158400FD688C /* AppDelegate.swift */; };
 		08DC67D21DD0158400FD688C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DC67D01DD0158400FD688C /* Main.storyboard */; };
 		08DC67D41DD0158400FD688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DC67D31DD0158400FD688C /* Assets.xcassets */; };
@@ -53,10 +73,31 @@
 		081681271DD025B700A53DE3 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreListViewController.swift; sourceTree = "<group>"; };
+		08849B061DE8E5F800DE41DB /* RosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
+		08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		0888BA081DD159ED00C2B1F9 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		0889CFA51E00D8CD00B97075 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "style-7_digital-7/digital-7.ttf"; sourceTree = SOURCE_ROOT; };
+		0889CFA81E00DEE300B97075 /* blue-devils-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blue-devils-logo.jpg"; path = "images/blue-devils-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFA91E00DEE300B97075 /* capital-thunder-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "capital-thunder-logo.gif"; path = "images/capital-thunder-logo.gif"; sourceTree = SOURCE_ROOT; };
+		0889CFAA1E00DEE300B97075 /* cougars-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cougars-logo.jpg"; path = "images/cougars-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFAB1E00DEE300B97075 /* fresno-monsters-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fresno-monsters-logo.jpg"; path = "images/fresno-monsters-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFAC1E00DEE300B97075 /* jr-sharks-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "jr-sharks-logo.jpg"; path = "images/jr-sharks-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFAD1E00DEE300B97075 /* oakland-bears-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "oakland-bears-logo.jpg"; path = "images/oakland-bears-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFAE1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "redwood-city-blackstars-logo.jpg"; path = "images/redwood-city-blackstars-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFAF1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "santa-clara-blackhaws-logo.gif"; path = "images/santa-clara-blackhaws-logo.gif"; sourceTree = SOURCE_ROOT; };
+		0889CFB01E00DEE300B97075 /* santa-rosa-flyers-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "santa-rosa-flyers-logo.jpg"; path = "images/santa-rosa-flyers-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFB11E00DEE300B97075 /* sf-sabercats-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sf-sabercats-logo.png"; path = "images/sf-sabercats-logo.png"; sourceTree = SOURCE_ROOT; };
+		0889CFB21E00DEE300B97075 /* stockton-colts-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "stockton-colts-logo.gif"; path = "images/stockton-colts-logo.gif"; sourceTree = SOURCE_ROOT; };
+		0889CFB31E00DEE300B97075 /* tahoe-grizzlies-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tahoe-grizzlies-logo.jpg"; path = "images/tahoe-grizzlies-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFB41E00DEE300B97075 /* vacaville-jets-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "vacaville-jets-logo.jpg"; path = "images/vacaville-jets-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		0889CFC61E00F7E700B97075 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		089089C91DE29DF100EAEDB4 /* ScoreboardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardModel.swift; sourceTree = "<group>"; };
+		0895A3581E03A23000B2FC8B /* goal-horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "goal-horn.mp3"; path = "sounds/goal-horn.mp3"; sourceTree = SOURCE_ROOT; };
 		08AB57C41DD16B7A00E354E4 /* ScoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		08AB57C61DD16C1800E354E4 /* PlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 		08AB58041DD172D100E354E4 /* PenaltyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenaltyModel.swift; sourceTree = "<group>"; };
+		08D935111DE4F74E002A63DE /* Scoreboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scoreboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		08D935141DE4F813002A63DE /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
 		08DC67C91DD0158400FD688C /* Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DC67CC1DD0158400FD688C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DC67D11DD0158400FD688C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +171,7 @@
 				081681271DD025B700A53DE3 /* GamesListViewController.swift */,
 				0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */,
 				08F087C01DD14BAB006E5963 /* PenaltyListViewController.swift */,
+				08849B061DE8E5F800DE41DB /* RosterViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +182,8 @@
 				0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */,
 				08F087BE1DD14A6C006E5963 /* ScoreListTableViewCell.swift */,
 				08F087C21DD14BFE006E5963 /* PenaltyListTableViewCell.swift */,
+				08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */,
+				0889CFC61E00F7E700B97075 /* GameCell.swift */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -151,8 +195,47 @@
 				08AB57C41DD16B7A00E354E4 /* ScoreModel.swift */,
 				08AB57C61DD16C1800E354E4 /* PlayerModel.swift */,
 				08AB58041DD172D100E354E4 /* PenaltyModel.swift */,
+				089089C91DE29DF100EAEDB4 /* ScoreboardModel.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		0889CFA71E00D8E600B97075 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0895A3531E039BA400B2FC8B /* sounds */,
+				0889CFC21E00DEFD00B97075 /* images */,
+				0889CFA51E00D8CD00B97075 /* digital-7.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0889CFC21E00DEFD00B97075 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0889CFA81E00DEE300B97075 /* blue-devils-logo.jpg */,
+				0889CFA91E00DEE300B97075 /* capital-thunder-logo.gif */,
+				0889CFAA1E00DEE300B97075 /* cougars-logo.jpg */,
+				0889CFAB1E00DEE300B97075 /* fresno-monsters-logo.jpg */,
+				0889CFAC1E00DEE300B97075 /* jr-sharks-logo.jpg */,
+				0889CFAD1E00DEE300B97075 /* oakland-bears-logo.jpg */,
+				0889CFAE1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg */,
+				0889CFAF1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif */,
+				0889CFB01E00DEE300B97075 /* santa-rosa-flyers-logo.jpg */,
+				0889CFB11E00DEE300B97075 /* sf-sabercats-logo.png */,
+				0889CFB21E00DEE300B97075 /* stockton-colts-logo.gif */,
+				0889CFB31E00DEE300B97075 /* tahoe-grizzlies-logo.jpg */,
+				0889CFB41E00DEE300B97075 /* vacaville-jets-logo.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		0895A3531E039BA400B2FC8B /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0895A3581E03A23000B2FC8B /* goal-horn.mp3 */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 		08DC67C01DD0158400FD688C = {
@@ -180,6 +263,7 @@
 		08DC67CB1DD0158400FD688C /* Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				0889CFA71E00D8E600B97075 /* Resources */,
 				08EB6E571DDFD0610043CFA9 /* Utility */,
 				0888BA071DD159D300C2B1F9 /* Models */,
 				0816812A1DD0265E00A53DE3 /* TableCells */,
@@ -189,6 +273,7 @@
 				08DC67D31DD0158400FD688C /* Assets.xcassets */,
 				08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */,
 				08DC67D81DD0158400FD688C /* Info.plist */,
+				08D935111DE4F74E002A63DE /* Scoreboard-Bridging-Header.h */,
 			);
 			path = Scoreboard;
 			sourceTree = "<group>";
@@ -216,6 +301,7 @@
 			children = (
 				08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */,
 				08EB6E551DDFD04D0043CFA9 /* Constants.swift */,
+				08D935141DE4F813002A63DE /* Encryptor.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -311,7 +397,13 @@
 					08DC67C81DD0158400FD688C = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 735DFD3LP6;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					08DC67DC1DD0158400FD688C = {
 						CreatedOnToolsVersion = 8.1;
@@ -353,8 +445,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DC67D71DD0158400FD688C /* LaunchScreen.storyboard in Resources */,
+				0889CFBD1E00DEE300B97075 /* santa-rosa-flyers-logo.jpg in Resources */,
+				0889CFBE1E00DEE300B97075 /* sf-sabercats-logo.png in Resources */,
+				0889CFB51E00DEE300B97075 /* blue-devils-logo.jpg in Resources */,
+				0895A3591E03A23000B2FC8B /* goal-horn.mp3 in Resources */,
+				0889CFB81E00DEE300B97075 /* fresno-monsters-logo.jpg in Resources */,
 				08DC67D41DD0158400FD688C /* Assets.xcassets in Resources */,
+				0889CFC01E00DEE300B97075 /* tahoe-grizzlies-logo.jpg in Resources */,
+				0889CFB71E00DEE300B97075 /* cougars-logo.jpg in Resources */,
+				0889CFC11E00DEE300B97075 /* vacaville-jets-logo.jpg in Resources */,
+				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
+				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
+				0889CFBB1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg in Resources */,
+				0889CFBC1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif in Resources */,
+				0889CFBA1E00DEE300B97075 /* oakland-bears-logo.jpg in Resources */,
+				0889CFA61E00D8CD00B97075 /* digital-7.ttf in Resources */,
+				0889CFB61E00DEE300B97075 /* capital-thunder-logo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,18 +624,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08D935151DE4F813002A63DE /* Encryptor.swift in Sources */,
 				08AB57C51DD16B7A00E354E4 /* ScoreModel.swift in Sources */,
 				08AB57C71DD16C1800E354E4 /* PlayerModel.swift in Sources */,
 				081681281DD025B700A53DE3 /* GamesListViewController.swift in Sources */,
+				089089CA1DE29DF100EAEDB4 /* ScoreboardModel.swift in Sources */,
 				081681261DD0217C00A53DE3 /* ScoreboardViewController.swift in Sources */,
 				0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */,
 				08DC67CD1DD0158400FD688C /* AppDelegate.swift in Sources */,
+				08849B071DE8E5F800DE41DB /* RosterViewController.swift in Sources */,
 				0816812C1DD0268300A53DE3 /* GameTableViewCell.swift in Sources */,
 				08F087C11DD14BAB006E5963 /* PenaltyListViewController.swift in Sources */,
 				08F087C31DD14BFE006E5963 /* PenaltyListTableViewCell.swift in Sources */,
 				08F087BF1DD14A6C006E5963 /* ScoreListTableViewCell.swift in Sources */,
 				08EB6E541DDFD02E0043CFA9 /* PusherManager.swift in Sources */,
+				08849B091DE8E7D300DE41DB /* RosterTableViewCell.swift in Sources */,
 				08EB6E561DDFD04D0043CFA9 /* Constants.swift in Sources */,
+				0889CFC71E00F7E700B97075 /* GameCell.swift in Sources */,
 				081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */,
 				08AB58051DD172D100E354E4 /* PenaltyModel.swift in Sources */,
 			);
@@ -686,11 +798,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 735DFD3LP6;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Intranotions.Scoreboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Scoreboard/Scoreboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -701,11 +817,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 735DFD3LP6;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Intranotions.Scoreboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Scoreboard/Scoreboard-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
