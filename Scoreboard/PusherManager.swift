@@ -603,6 +603,28 @@ class PusherManager: BackendManager {
         //gameChannel = gamePusher.subscribe(rink!)
         gameChannel = pusher.subscribe("south")
         
+        
+        // bind to events for the given game ID
+        
+        gameChannel.bind(eventName: "my_event", callback: { (data: Any?) -> Void in
+            print("\nGAME CHANNEL DATA")
+            if let data = data as? [String : AnyObject] {
+                if let message = data["message"] as? String {
+                    print(message)
+                }
+            }
+            
+        })
+        
+        
+        
+        pusher.bind({ (data: Any?) -> Void in
+            
+            if let data = data as? [String : AnyObject] {
+                print(data)
+            }
+        })
+        
        
         // establish connection
         pusher.connect()
@@ -661,18 +683,20 @@ extension PusherManager: PusherDelegate {
     func subscribedToChannel(name: String) {
         print("\nPUSHER CONNECTION SUBSCRIBED TO: \(name)\n")
         
-        // bind to events for the given game ID
+        var data: Data?
         
-        gameChannel.bind(eventName: "my_event", callback: { (data: Any?) -> Void in
-            print("\nGAME CHANNEL DATA")
-            if let data = data as? [String : AnyObject] {
-                if let message = data["message"] as? String {
-                    print(message)
-                }
-            }
+        do {
+            try data = JSONSerialization.data(withJSONObject: ["data" : "south"], options: .prettyPrinted)
             
-        })
+        }
+        catch {
+            print("JSON FAIL")
+        }
+       
+        print(data!)
         
+        
+        gameChannel.trigger(eventName: "my_event", data: data!)
     }
     func failedToSubscribeToChannel(name: String, response: URLResponse?, data: String?, error: NSError?) {
         print("PUSHER CONNECTION FAILED TO SUBSCRIBE: name = \n" + name + "\nresponse = \(String(describing: response))" + "\ndata= \(String(describing: data))" + "\nerror = \(String(describing: error))")
