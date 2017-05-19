@@ -21,8 +21,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         
         
-        self.navigationItem.title = "Games"
-        
+                
         gamesTable.register(UINib(nibName: "GameCell", bundle: nil), forCellReuseIdentifier: "aGameCell")
         gamesTable.estimatedRowHeight = 150.0
         gamesTable.rowHeight = UITableViewAutomaticDimension

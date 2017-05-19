@@ -75,7 +75,6 @@
                         </subviews>
                     </stackView>
                 </subviews>
-                <color key="backgroundColor" red="0.39539930555555558" green="0.72415574060546029" blue="0.88140942984157133" alpha="0.1483037243150685" colorSpace="calibratedRGB"/>
                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="etA-EM-ag8" secondAttribute="leading" id="4RA-Bp-gMx"/>
@@ -88,6 +87,7 @@
                     <constraint firstItem="eZo-mi-jp0" firstAttribute="top" secondItem="euc-fA-dY8" secondAttribute="topMargin" constant="6" id="tuT-Pq-t0c"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="awayScoreLabel" destination="qTR-P6-yNN" id="6b3-4v-SKR"/>
                 <outlet property="awayTeamLabel" destination="eOD-Ov-Aj1" id="tOV-QI-ZFG"/>
