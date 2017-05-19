@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="aGameCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="aGameCell" rowHeight="65" id="T6q-GD-1Sl" customClass="GameCell" customModule="Scoreboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T6q-GD-1Sl" id="euc-fA-dY8">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="etA-EM-ag8">
+                        <rect key="frame" x="8" y="6" width="56.5" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 1" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCz-vM-3N1">
+                                <rect key="frame" x="0.0" y="0.0" width="56.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Team 2" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOD-Ov-Aj1">
+                                <rect key="frame" x="0.0" y="30.5" width="56.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kCz-vM-3N1" firstAttribute="top" secondItem="etA-EM-ag8" secondAttribute="top" id="5Dv-jX-q61"/>
+                            <constraint firstAttribute="bottom" secondItem="eOD-Ov-Aj1" secondAttribute="bottom" id="Cf9-f7-xfx"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Koq-gx-OLj">
+                        <rect key="frame" x="326.5" y="12" width="10.5" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F10-ge-0jT">
+                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-P6-yNN">
+                                <rect key="frame" x="0.0" y="20.5" width="10.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eZo-mi-jp0">
+                        <rect key="frame" x="359.5" y="14" width="134" height="41.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/1 @ 7:30 PM" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kRB-7Y-4Dp">
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vacaville Ice Sports" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMt-QH-lyb">
+                                <rect key="frame" x="0.0" y="23.5" width="134" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.39539930555555558" green="0.72415574060546029" blue="0.88140942984157133" alpha="0.1483037243150685" colorSpace="calibratedRGB"/>
+                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="etA-EM-ag8" secondAttribute="leading" id="4RA-Bp-gMx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eZo-mi-jp0" secondAttribute="trailing" constant="0.5" id="8ex-e6-h22"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Koq-gx-OLj" secondAttribute="trailing" constant="157.5" id="BnT-n7-Apc"/>
+                    <constraint firstItem="etA-EM-ag8" firstAttribute="top" secondItem="euc-fA-dY8" secondAttribute="topMargin" constant="-2" id="FWL-fM-sDF"/>
+                    <constraint firstItem="Koq-gx-OLj" firstAttribute="top" secondItem="euc-fA-dY8" secondAttribute="topMargin" constant="4" id="WAr-X3-iqQ"/>
+                    <constraint firstItem="qTR-P6-yNN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="etA-EM-ag8" secondAttribute="trailing" constant="10" id="hYe-an-9QV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="etA-EM-ag8" secondAttribute="bottom" id="jK6-k1-Wy2"/>
+                    <constraint firstItem="eZo-mi-jp0" firstAttribute="top" secondItem="euc-fA-dY8" secondAttribute="topMargin" constant="6" id="tuT-Pq-t0c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="awayScoreLabel" destination="qTR-P6-yNN" id="6b3-4v-SKR"/>
+                <outlet property="awayTeamLabel" destination="eOD-Ov-Aj1" id="tOV-QI-ZFG"/>
+                <outlet property="dateLabel" destination="kRB-7Y-4Dp" id="EIB-g3-jM8"/>
+                <outlet property="homeScoreLabel" destination="F10-ge-0jT" id="I4S-XF-wO9"/>
+                <outlet property="homeTeamLabel" destination="kCz-vM-3N1" id="sws-Vu-nvb"/>
+                <outlet property="rinkLabel" destination="gMt-QH-lyb" id="5Vo-6U-CZh"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="101.5"/>
+        </tableViewCell>
+    </objects>
+</document>

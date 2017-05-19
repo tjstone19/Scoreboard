@@ -14,7 +14,7 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var roster: [PlayerModel] = [PlayerModel]()
     
     // Receives updates from server
-    var pusherManager: PusherManager!
+    var pusherManager: BackendManager!
     
     @IBOutlet weak var rosterTable: UITableView!
     
@@ -33,7 +33,14 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         if roster.count > 0 {
-            roster = roster.sorted(by: { Int($0.number!)! < Int($1.number!)! })
+            roster = roster.sorted(by: {
+                if $0.number != "" && $1.number != "" {
+                    return Int($0.number!)! < Int($1.number!)!
+                }
+                else {
+                    return $0.name! < $1.name!
+                }
+            })
         }
         
         

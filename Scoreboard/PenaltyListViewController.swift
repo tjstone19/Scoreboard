@@ -15,7 +15,7 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
     var isHome: Bool = true
     
     // Set by the scoreboard VC
-    var pusherManager: PusherManager?
+    var pusherManager: BackendManager?
     
     // Contains penalty data
     var penaltys: [PenaltyModel] = [PenaltyModel]()

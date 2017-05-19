@@ -14,9 +14,11 @@ class GameCell: UITableViewCell {
     @IBOutlet weak var homeScoreLabel: UILabel!
     @IBOutlet weak var awayScoreLabel: UILabel!
     
-    @IBOutlet weak var homeLogo: UIImageView!
-    @IBOutlet weak var awayLogo: UIImageView!
+    @IBOutlet weak var homeLogo: UIImageView?
+    @IBOutlet weak var awayLogo: UIImageView?
     
+    @IBOutlet weak var dateLabel: UILabel!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

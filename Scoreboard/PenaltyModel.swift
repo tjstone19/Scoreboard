@@ -15,19 +15,14 @@ struct PenaltyModel {
     var length: String?
     var player: String?
     
+    var periodNumber: Int?
+    
     init() {
         period = ""
         time = ""
         type = ""
         length = ""
         player = ""
-    }
-    
-    init(aPeriod: String, aTime: String, aType: String, aLength: String, aPlayer: String) {
-        period = aPeriod
-        time = aTime
-        type = aType
-        length = aLength
-        player = aPlayer
+        periodNumber = 0
     }
 }

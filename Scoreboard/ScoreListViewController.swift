@@ -14,7 +14,7 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
     var isHome: Bool = true
     
     // Set by the Scoreboard VC
-    var pusherManager: PusherManager?
+    var pusherManager: BackendManager?
     
     // Contains list of goal information
     var goals: [ScoreModel] = [ScoreModel]()

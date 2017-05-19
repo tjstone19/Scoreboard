@@ -12,11 +12,116 @@ class Encryptor: NSObject, URLSessionDelegate {
     var urlSession: URLSession!
     var request: URLRequest!
     var opQueue: OperationQueue = OperationQueue()
+    
+    
+    //
+    // Retrieves the data from TimeToScore for the given request.
+    //
+    // @param requestType: type of request to make to the server
+    // @param completion: call back function that is passed the downloaded data.
+    //
+    func getGameDataFromTTS(completion: @escaping ([String : AnyObject]?) -> Void) {
+        getDataFromTTS(completion: { gameData in
+            completion(gameData)
+        })
+    }
+    
+    func getDataFor(gameId: String, type: Request, completion: @escaping ([String : AnyObject]?) -> Void) {
+        urlSession = URLSession(configuration: .default,
+                                delegate: self,
+                                delegateQueue: OperationQueue.main)
+        
+        request = URLRequest(url: type.getRequestUrlFor(gameId: gameId)!)
+        //request = URLRequest(url: URL(string: "http://live.sharksice.timetoscore.com/get_game_rosters?game_id=162222")!)
+        request.httpMethod = "GET"
+        
+                
+        //print("\nAbout TO DOWNLOAD GAMES\n\n")
+        
+        // Download list of games from time to score
+        let task = urlSession.dataTask(with: request,
+                                       completionHandler:
+            {(data, response, error) -> Void in
+                // Check for error
+                if error != nil {
+                    
+                    //print("Error: getDataFor")
+                    
+                }
+                    // Successful game list download
+                else {
+                    //print("Data: getDataFor")
+                    
+                    // List of games as a string
+                    let jsonString: String = String(data: data!, encoding: .utf8)!
+                    
+                    
+                    // Convert the list of games to a dictionary and call the completion handler
+                    do {
+                        try completion(JSONSerialization.jsonObject(with: data!, options: []) as? [String: AnyObject])
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+                // Resonse
+                if response != nil {
+                   // print("Response: getDataFor")
+                    
+                }
+        })
+        task.resume()
+    }
 
     
+    func getRosterData(gameId: String, completion: @escaping ([String : AnyObject]?) -> Void) {
+        urlSession = URLSession(configuration: .default,
+                                delegate: self,
+                                delegateQueue: OperationQueue.main)
+        
+        request = URLRequest(url: Request.roster.getRequestUrlFor(gameId: gameId)!)
+        //request = URLRequest(url: URL(string: "http://live.sharksice.timetoscore.com/get_game_rosters?game_id=162222")!)
+        
+        print(request.url!)
+        request.httpMethod = "GET"
+        
+        // Download list of games from time to score
+        let task = urlSession.dataTask(with: request,
+                                       completionHandler:
+            {(data, response, error) -> Void in
+                // Check for error
+                if error != nil {
+                    //print("Error:getRosterData")
+                    
+                }
+                    // Successful game list download
+                else {
+                    //print("Data: getRosterData")
+                    
+                    
+                    // List of games as a string
+                    let jsonString: String = String(data: data!, encoding: .utf8)!
+                    
+                    
+                    
+                    
+                    // Convert the list of games to a dictionary and call the completion handler
+                    do {
+                        try completion(JSONSerialization.jsonObject(with: data!, options: []) as? [String: AnyObject])
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+        })
+        task.resume()
+    }
+    
+    //
     // Call TTS' API with a request and query.
-    func getDataFromTTS() -> Data {
-        var retData: Data = Data()
+    // 
+    // @param completion: called when the game data is retrieved.
+    //
+    private func getDataFromTTS(completion: @escaping ([String : AnyObject]?) -> Void) {
+       
         let md5: String
         var args: String
         var urlString: String
@@ -25,8 +130,8 @@ class Encryptor: NSObject, URLSessionDelegate {
         md5 = "".md5()
         
         args = buildTTSArgs(md5Body: md5)
-        urlString = buildURLString(request: "get_schedule", args: args)
-        hashString = buildHashString(request: "get_schedule", args: args)
+        urlString = buildURLString(request: Request.schedule.rawValue, args: args)
+        hashString = buildHashString(request: Request.schedule.rawValue, args: args)
         
         do {
             let authenticator: Authenticator = try HMAC(key: Constants.TTS_SECRET_KEY, variant: .sha256)
@@ -41,41 +146,40 @@ class Encryptor: NSObject, URLSessionDelegate {
        
         urlSession = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue.main)
         request = URLRequest(url: URL(string: urlString)!)
+        //print(urlString)
         request.httpMethod = "GET"
-       
         
-       let task = urlSession.dataTask(with: request,
+        self.downloadGames(completion: completion)
+       
+    }
+    
+    //
+    // Downloads Time To Score's entire list of games.
+    //
+    // @param completion: passed the dictionary of games when the download is complete.
+    //
+    private func downloadGames(completion: @escaping ([String : AnyObject]?) -> Void) {
+       
+        // Download list of games from time to score
+        let task = urlSession.dataTask(with: request,
                                        completionHandler:
             {(data, response, error) -> Void in
+                // Check for error
                 if error != nil {
-                    print("Error:")
-                    print(error!)
+                    //print("Error:")
+                    
                 }
+                // Successful game list download
                 else {
-                    print("Data: ")
-                    print(data!)
-                    
-                    let jsonString: String = String(data: data!, encoding: .utf8)!
-                    
-                    print("\nPRINTING JSON STRING\n")
-                    print(jsonString)
-                    
-                    retData = data!
-                }
-                
-                if response != nil {
-                    print("Response: ")
-                    print(response!)
+                    // Convert the list of games to a dictionary and call the completion handler
+                    do {
+                        try completion(JSONSerialization.jsonObject(with: data!, options: []) as? [String: AnyObject])
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
         })
         task.resume()
-        
-      /*  if let task = urlSession?.dataTask(with: request) {
-            task.resume()
-        }*/
-      
-        
-        return retData
     }
     
     
@@ -91,7 +195,6 @@ class Encryptor: NSObject, URLSessionDelegate {
         args.append("auth_key=")
         args.append(Constants.TTS_USER_NAME)
         args.append("&auth_timestamp=")
-        print(authTime)
         args.append(String(authTime))
         args.append("&body_md5=")
         args.append(md5Body)
@@ -246,3 +349,17 @@ class Encryptor: NSObject, URLSessionDelegate {
     }
 }
 
+enum Request: String {
+    case schedule = "get_schedule"
+    case roster = "get_game_rosters"
+    case gameEvents = "get_game_events"
+    case teamInfo = "get_team_info"
+    
+    // Creates the url for the given request.
+    func getRequestUrlFor(gameId: String) -> URL? {
+        if self == .schedule {
+            return nil
+        }
+        return URL(string: "http://live.sharksice.timetoscore.com/\(self.rawValue)?game_id=\(gameId)")!
+    }
+}

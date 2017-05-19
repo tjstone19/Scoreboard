@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0813D7411EA5A4FF00E5A9CC /* TestPusherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813D7401EA5A4FF00E5A9CC /* TestPusherManager.swift */; };
+		0813D7431EA5A5CB00E5A9CC /* BackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813D7421EA5A5CB00E5A9CC /* BackendManager.swift */; };
 		081681261DD0217C00A53DE3 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081681251DD0217C00A53DE3 /* ScoreboardViewController.swift */; };
 		081681281DD025B700A53DE3 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081681271DD025B700A53DE3 /* GamesListViewController.swift */; };
 		0816812C1DD0268300A53DE3 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */; };
 		081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */; };
+		08264A9A1EC58EDF00D46C02 /* CAHALogoMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 08264A991EC58EDF00D46C02 /* CAHALogoMain.png */; };
+		0832C9A71EC5421800EDEA3E /* Scoreboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */; };
+		0832C9AB1EC54F0E00EDEA3E /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */; };
 		08849B071DE8E5F800DE41DB /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08849B061DE8E5F800DE41DB /* RosterViewController.swift */; };
 		08849B091DE8E7D300DE41DB /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */; };
 		0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0888BA081DD159ED00C2B1F9 /* GameModel.swift */; };
@@ -69,10 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0813D7401EA5A4FF00E5A9CC /* TestPusherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPusherManager.swift; sourceTree = "<group>"; };
+		0813D7421EA5A5CB00E5A9CC /* BackendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendManager.swift; sourceTree = "<group>"; };
 		081681251DD0217C00A53DE3 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
 		081681271DD025B700A53DE3 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreListViewController.swift; sourceTree = "<group>"; };
+		08264A991EC58EDF00D46C02 /* CAHALogoMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CAHALogoMain.png; path = images/CAHALogoMain.png; sourceTree = SOURCE_ROOT; };
+		0832C9A61EC5421800EDEA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Scoreboard.storyboard; sourceTree = "<group>"; };
+		0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 		08849B061DE8E5F800DE41DB /* RosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
 		08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		0888BA081DD159ED00C2B1F9 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
@@ -164,6 +174,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0813D7441EA5C1E500E5A9CC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */,
+				0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */,
+				08DC67D01DD0158400FD688C /* Main.storyboard */,
+				08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0813D7451EA5C20800E5A9CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0889CFA51E00D8CD00B97075 /* digital-7.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		081681291DD0261700A53DE3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,9 +232,12 @@
 		0889CFA71E00D8E600B97075 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				08DC67D31DD0158400FD688C /* Assets.xcassets */,
+				08DC67D81DD0158400FD688C /* Info.plist */,
+				08D935111DE4F74E002A63DE /* Scoreboard-Bridging-Header.h */,
+				0813D7451EA5C20800E5A9CC /* Fonts */,
 				0895A3531E039BA400B2FC8B /* sounds */,
 				0889CFC21E00DEFD00B97075 /* images */,
-				0889CFA51E00D8CD00B97075 /* digital-7.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -213,6 +245,7 @@
 		0889CFC21E00DEFD00B97075 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				08264A991EC58EDF00D46C02 /* CAHALogoMain.png */,
 				0889CFA81E00DEE300B97075 /* blue-devils-logo.jpg */,
 				0889CFA91E00DEE300B97075 /* capital-thunder-logo.gif */,
 				0889CFAA1E00DEE300B97075 /* cougars-logo.jpg */,
@@ -241,12 +274,12 @@
 		08DC67C01DD0158400FD688C = {
 			isa = PBXGroup;
 			children = (
+				006DA2DAF177F2428C2E3EDB /* Frameworks */,
+				D56EC017AA9F5A6B63F5C0B3 /* Pods */,
+				08DC67CA1DD0158400FD688C /* Products */,
 				08DC67CB1DD0158400FD688C /* Scoreboard */,
 				08DC67E01DD0158400FD688C /* ScoreboardTests */,
 				08DC67EB1DD0158400FD688C /* ScoreboardUITests */,
-				08DC67CA1DD0158400FD688C /* Products */,
-				D56EC017AA9F5A6B63F5C0B3 /* Pods */,
-				006DA2DAF177F2428C2E3EDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,17 +296,13 @@
 		08DC67CB1DD0158400FD688C /* Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				08DC67CC1DD0158400FD688C /* AppDelegate.swift */,
+				0813D7441EA5C1E500E5A9CC /* Storyboards */,
 				0889CFA71E00D8E600B97075 /* Resources */,
 				08EB6E571DDFD0610043CFA9 /* Utility */,
 				0888BA071DD159D300C2B1F9 /* Models */,
 				0816812A1DD0265E00A53DE3 /* TableCells */,
 				081681291DD0261700A53DE3 /* ViewControllers */,
-				08DC67CC1DD0158400FD688C /* AppDelegate.swift */,
-				08DC67D01DD0158400FD688C /* Main.storyboard */,
-				08DC67D31DD0158400FD688C /* Assets.xcassets */,
-				08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */,
-				08DC67D81DD0158400FD688C /* Info.plist */,
-				08D935111DE4F74E002A63DE /* Scoreboard-Bridging-Header.h */,
 			);
 			path = Scoreboard;
 			sourceTree = "<group>";
@@ -302,6 +331,8 @@
 				08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */,
 				08EB6E551DDFD04D0043CFA9 /* Constants.swift */,
 				08D935141DE4F813002A63DE /* Encryptor.swift */,
+				0813D7401EA5A4FF00E5A9CC /* TestPusherManager.swift */,
+				0813D7421EA5A5CB00E5A9CC /* BackendManager.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -445,15 +476,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DC67D71DD0158400FD688C /* LaunchScreen.storyboard in Resources */,
+				08264A9A1EC58EDF00D46C02 /* CAHALogoMain.png in Resources */,
 				0889CFBD1E00DEE300B97075 /* santa-rosa-flyers-logo.jpg in Resources */,
 				0889CFBE1E00DEE300B97075 /* sf-sabercats-logo.png in Resources */,
 				0889CFB51E00DEE300B97075 /* blue-devils-logo.jpg in Resources */,
 				0895A3591E03A23000B2FC8B /* goal-horn.mp3 in Resources */,
 				0889CFB81E00DEE300B97075 /* fresno-monsters-logo.jpg in Resources */,
 				08DC67D41DD0158400FD688C /* Assets.xcassets in Resources */,
+				0832C9A71EC5421800EDEA3E /* Scoreboard.storyboard in Resources */,
 				0889CFC01E00DEE300B97075 /* tahoe-grizzlies-logo.jpg in Resources */,
 				0889CFB71E00DEE300B97075 /* cougars-logo.jpg in Resources */,
 				0889CFC11E00DEE300B97075 /* vacaville-jets-logo.jpg in Resources */,
+				0832C9AB1EC54F0E00EDEA3E /* GameCell.xib in Resources */,
 				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
 				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
@@ -494,7 +528,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		049F0D3A0BD9C3E96784260E /* [CP] Copy Pods Resources */ = {
@@ -524,7 +558,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3869CD8C1051C0FDB549C6E5 /* [CP] Embed Pods Frameworks */ = {
@@ -584,7 +618,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6CAF292874CFBDEC6977368D /* [CP] Embed Pods Frameworks */ = {
@@ -624,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0813D7431EA5A5CB00E5A9CC /* BackendManager.swift in Sources */,
 				08D935151DE4F813002A63DE /* Encryptor.swift in Sources */,
 				08AB57C51DD16B7A00E354E4 /* ScoreModel.swift in Sources */,
 				08AB57C71DD16C1800E354E4 /* PlayerModel.swift in Sources */,
@@ -640,6 +675,7 @@
 				08EB6E541DDFD02E0043CFA9 /* PusherManager.swift in Sources */,
 				08849B091DE8E7D300DE41DB /* RosterTableViewCell.swift in Sources */,
 				08EB6E561DDFD04D0043CFA9 /* Constants.swift in Sources */,
+				0813D7411EA5A4FF00E5A9CC /* TestPusherManager.swift in Sources */,
 				0889CFC71E00F7E700B97075 /* GameCell.swift in Sources */,
 				081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */,
 				08AB58051DD172D100E354E4 /* PenaltyModel.swift in Sources */,
@@ -678,6 +714,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0832C9A61EC5421800EDEA3E /* Base */,
+			);
+			name = Scoreboard.storyboard;
+			sourceTree = "<group>";
+		};
 		08DC67D01DD0158400FD688C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -40,7 +40,7 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     
     // Set by the game view controller.
     // Provides updates when data is received.
-    var pusherManager: PusherManager?
+    var pusherManager: BackendManager?
     
     var firstUpdate: Bool = true
     
@@ -148,7 +148,7 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
         periodLabel.text = model.period
         
         // Notify the user that a goal was scored
-        if homeScoreLabel.text != oldHomeScore ||
+       /* if homeScoreLabel.text != oldHomeScore ||
             awayScoreLabel.text != oldAwayScore {
             (UIApplication.shared.delegate as! AppDelegate).goalsMissed += 1
             sendGoalNotification()
@@ -159,7 +159,7 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         
-        firstUpdate = false
+        firstUpdate = false*/
     }
     
     // MARK: - Navigation

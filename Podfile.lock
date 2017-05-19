@@ -1,0 +1,15 @@
+PODS:
+  - CryptoSwift (0.6.6)
+  - PusherSwift (4.0.1)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - PusherSwift (~> 4.0)
+
+SPEC CHECKSUMS:
+  CryptoSwift: 88592381b73f36e192124539390a7c9bacda76af
+  PusherSwift: 8249a1c3634943cf7e1e9a691468357d53ab7e5f
+
+PODFILE CHECKSUM: 08dfa195ed9f50b9f0da6bf163da590d9e3c2adf
+
+COCOAPODS: 1.2.1
