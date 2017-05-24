@@ -69,6 +69,46 @@ struct GameModel {
         return dateForm.date(from: self.date!)
     }
     
+    func isLiveGame() -> Bool {
+        var ret: Bool = false
+        
+        let timeForm: DateFormatter = DateFormatter()
+        timeForm.dateFormat = "H:mm:ss"
+        let calendar: Calendar = Calendar.current
+        
+        let dateForm: DateFormatter = DateFormatter()
+        dateForm.dateFormat = "YYYY-MM-dd"
+        
+        // get current date (format doesnt match the format of dates from the server)
+        let todayDate = Date()
+        
+        // convert the current date into the correct format
+        let today = dateForm.date(from: dateForm.string(from: todayDate))
+        
+        // get past 12 hours date so we get cames that occured earlier in the day
+        let now = calendar.date(byAdding: .hour, value: 0, to: today!)
+        
+        // get past 12 hours date so we get cames that occured earlier in the day
+        let next2Hours = calendar.date(byAdding: .hour, value: 2, to: today!)
+    
+        
+        // get game date
+        if self.date != nil {
+            
+            // get date obj from game's date string
+            guard let gameDate = convertGameDate() else { return false }
+            
+            // Check if the game's date is in a week from today
+            if now != nil && next2Hours != nil
+                && (now!...next2Hours!).contains(gameDate) {
+                ret = true
+            }
+        }
+        
+        return ret
+
+    }
+    
     //
     // Determines if the game is going to start within a certain amount of days.
     // The range is determined by the UPCOMING_GAME_RANGE value in the Constants class
