@@ -21,7 +21,7 @@ class Constants {
     static let TTS_SECRET_KEY: String = "william"
     static let TTS_LEAGUE: String = "league_id=1"
     
-    static let UPCOMING_GAME_RANGE: Int = 1
+    static let UPCOMING_GAME_RANGE: Int = 5
     
     // Locale for formatting date objects.
     static let EN_US_POSIX = Locale(identifier: "en_US_POSIX")

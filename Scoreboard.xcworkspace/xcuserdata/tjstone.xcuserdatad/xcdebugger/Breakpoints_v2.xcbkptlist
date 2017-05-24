@@ -330,13 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516778624.102121"
+            timestampString = "516919187.893194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "649"
-            endingLineNumber = "649"
-            landmarkName = "registeredForPushNotifications(clientId:)"
-            landmarkType = "7">
+            startingLineNumber = "710"
+            endingLineNumber = "710">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -346,13 +344,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516778624.102121"
+            timestampString = "516919187.893194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "652"
-            endingLineNumber = "652"
-            landmarkName = "subscribedToInterest(name:)"
-            landmarkType = "7">
+            startingLineNumber = "713"
+            endingLineNumber = "713">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -362,29 +358,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516778624.102121"
+            timestampString = "516919187.893194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "655"
-            endingLineNumber = "655"
-            landmarkName = "unsubscribedFromInterest(name:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516771680.291207"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "593"
-            endingLineNumber = "593"
-            landmarkName = "establishConnection()"
-            landmarkType = "7">
+            startingLineNumber = "716"
+            endingLineNumber = "716">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,11 +388,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516778457.911181"
+            timestampString = "516864840.321296"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "604"
-            endingLineNumber = "604"
+            startingLineNumber = "591"
+            endingLineNumber = "591"
             landmarkName = "establishConnection()"
             landmarkType = "7">
          </BreakpointContent>
@@ -422,49 +400,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516779188.538925"
+            filePath = "Pods/PusherSwift/Source/Starscream.swift"
+            timestampString = "516865594.330812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "668"
-            endingLineNumber = "668"
-            landmarkName = "subscribedToChannel(name:)"
+            startingLineNumber = "707"
+            endingLineNumber = "707"
+            landmarkName = "processInputStream()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Scoreboard.PusherManager.(subscribedToChannel (name : Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "Scoreboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tjstone/CalPoly/Spring2017/CPE400/Scoreboard/Scoreboard/PusherManager.swift"
-                  timestampString = "516779856.038324"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "668"
-                  endingLineNumber = "668"
-                  offsetFromSymbolStart = "215">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Scoreboard.PusherManager.(subscribedToChannel (name : Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "Scoreboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tjstone/CalPoly/Spring2017/CPE400/Scoreboard/Scoreboard/PusherManager.swift"
-                  timestampString = "516779856.040713"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "668"
-                  endingLineNumber = "668"
-                  offsetFromSymbolStart = "574">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/PusherSwift/Source/Starscream.swift"
+            timestampString = "516865604.588375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "724"
+            endingLineNumber = "724"
+            landmarkName = "dequeueInput()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -474,45 +436,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Scoreboard/PusherManager.swift"
-            timestampString = "516779853.776328"
+            timestampString = "516919187.893194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "666"
-            endingLineNumber = "666"
+            startingLineNumber = "723"
+            endingLineNumber = "723">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Scoreboard/PusherManager.swift"
+            timestampString = "516919187.893194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "699"
+            endingLineNumber = "699"
             landmarkName = "subscribedToChannel(name:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Scoreboard.PusherManager.subscribedToChannel (name : Swift.String) -&gt; ()"
-                  moduleName = "Scoreboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tjstone/CalPoly/Spring2017/CPE400/Scoreboard/Scoreboard/PusherManager.swift"
-                  timestampString = "516779856.046106"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "666"
-                  endingLineNumber = "666"
-                  offsetFromSymbolStart = "381">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Scoreboard.PusherManager.(subscribedToChannel (name : Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "Scoreboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tjstone/CalPoly/Spring2017/CPE400/Scoreboard/Scoreboard/PusherManager.swift"
-                  timestampString = "516779856.047987"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "667"
-                  endingLineNumber = "667"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Scoreboard/PusherManager.swift"
+            timestampString = "516919229.55985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "696"
+            endingLineNumber = "696"
+            landmarkName = "subscribedToChannel(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Scoreboard/GameModel.swift"
+            timestampString = "517296156.349797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "isLiveGame()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
