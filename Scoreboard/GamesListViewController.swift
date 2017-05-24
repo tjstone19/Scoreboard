@@ -121,7 +121,6 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
                 upcomingGames.append(game)
             }
         }
-        
     }
     
     // Called by pusher manager when an update is received.
@@ -151,21 +150,24 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     // 
     //  Automatically determine size of the cell.
     //
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
     //
     //  Estimate height for cell.
     //
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView,
+                   estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
     //
     //  Number of sections in the game table.
     //
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if displayedGames.count == 0 {
             return 1
@@ -176,30 +178,35 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     //
     // Constructs the cell to be displayed and populates the label text.
     //
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if displayedGames.count == 0 {
-            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) 
+            let cell: UITableViewCell =
+                tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
             cell.textLabel?.text = "No Games Available"
             
             return cell
         }
         else {
-            let cell: GameCell = tableView.dequeueReusableCell(withIdentifier: "aGameCell", for: indexPath) as! GameCell
+            let cell: GameCell =
+                tableView.dequeueReusableCell(withIdentifier: "aGameCell",
+                                              for: indexPath) as! GameCell
             
             // Configure the cell...
+            let game = displayedGames[indexPath.row]
             
-            cell.rinkLabel.text = displayedGames[indexPath.row].rink
-            cell.homeTeamLabel.text = displayedGames[indexPath.row].homeTeam
-            cell.awayTeamLabel.text = displayedGames[indexPath.row].awayTeam
-            cell.homeScoreLabel.text = displayedGames[indexPath.row].homeScore
-            cell.awayScoreLabel.text = displayedGames[indexPath.row].awayScore
+            cell.rinkLabel.text = game.rink
+            cell.homeTeamLabel.text = game.homeTeam
+            cell.awayTeamLabel.text = game.awayTeam
+            cell.homeScoreLabel.text = game.homeScore
+            cell.awayScoreLabel.text = game.awayScore
             
-            cell.homeLogo?.image = Constants.getLogo(team: displayedGames[indexPath.row].homeTeam!)
-            cell.awayLogo?.image = Constants.getLogo(team: displayedGames[indexPath.row].awayTeam!)
+            cell.homeLogo?.image = Constants.getLogo(team: game.homeTeam!)
+            cell.awayLogo?.image = Constants.getLogo(team: game.awayTeam!)
             
-            cell.dateLabel.text = displayedGames[indexPath.row].userFriendlyDate!
+            cell.dateLabel.text = game.userFriendlyDate!
             
             
             return cell
@@ -209,6 +216,17 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     // MARK:- selected cell at index
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard let cell = tableView.cellForRow(at: indexPath) as? GameCell else {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return
+        }
+        
+        if indexPath.row > displayedGames.count {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return
+        }
+        
         let game = self.displayedGames[indexPath.row]
         
         self.pusherManager.bindToGame(gameId: game.gameId!)
