@@ -217,7 +217,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK:- selected cell at index
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard let cell = tableView.cellForRow(at: indexPath) as? GameCell else {
+        guard (tableView.cellForRow(at: indexPath) as? GameCell) != nil else {
             tableView.deselectRow(at: indexPath, animated: true)
             return
         }

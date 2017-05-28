@@ -53,7 +53,7 @@ class Encryptor: NSObject, URLSessionDelegate {
                     //print("Data: getDataFor")
                     
                     // List of games as a string
-                    let jsonString: String = String(data: data!, encoding: .utf8)!
+                    let _: String = String(data: data!, encoding: .utf8)!
                     
                     
                     // Convert the list of games to a dictionary and call the completion handler
@@ -99,7 +99,7 @@ class Encryptor: NSObject, URLSessionDelegate {
                     
                     
                     // List of games as a string
-                    let jsonString: String = String(data: data!, encoding: .utf8)!
+                    let _: String = String(data: data!, encoding: .utf8)!
                     
                     
                     

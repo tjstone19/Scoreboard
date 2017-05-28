@@ -127,8 +127,8 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     // Called by pusher manager when an update is received.
     func updateUI() {
         let model: ScoreboardModel = (pusherManager?.scoreboard)!
-        let oldHomeScore: String? = homeScoreLabel.text
-        let oldAwayScore: String? = awayScoreLabel.text
+        let _: String? = homeScoreLabel.text
+        let _: String? = awayScoreLabel.text
         
         homeScoreLabel.text = model.homeScore
         homeShotsLabel.text = model.homeShots

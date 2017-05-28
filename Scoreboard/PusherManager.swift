@@ -556,7 +556,7 @@ class PusherManager: BackendManager {
         currentGame = gamesArray[gameIdx]
         
         // get the game rink removing san jose and spaces, converted to lower case
-        let rink = currentGame.rink?
+        _ = currentGame.rink?
             .replacingOccurrences(of: "San Jose", with: "")
             .replacingOccurrences(of: " ", with: "")
             .lowercased()
