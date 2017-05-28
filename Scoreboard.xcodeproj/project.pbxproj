@@ -56,6 +56,8 @@
 		6181E22E9E500DC3B062E3C3 /* Pods_ScoreboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1164CA3C95F7123926375574 /* Pods_ScoreboardUITests.framework */; };
 		BD2785591ED55F0B009F702E /* norcal logo-splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = BD2785581ED55F0B009F702E /* norcal logo-splash screen.png */; };
 		BD27855B1ED55F19009F702E /* norcal logo_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = BD27855A1ED55F19009F702E /* norcal logo_circle.png */; };
+		BDC55CDD1ED5736200A2D1AB /* background-ice1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BDC55CDC1ED5736200A2D1AB /* background-ice1.jpg */; };
+		BDC55CDF1ED5736700A2D1AB /* background-ice2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BDC55CDE1ED5736700A2D1AB /* background-ice2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		90B036ADD5DC301BCF30F1E2 /* Pods-Scoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoreboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scoreboard/Pods-Scoreboard.debug.xcconfig"; sourceTree = "<group>"; };
 		BD2785581ED55F0B009F702E /* norcal logo-splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "norcal logo-splash screen.png"; path = "images/norcal logo-splash screen.png"; sourceTree = SOURCE_ROOT; };
 		BD27855A1ED55F19009F702E /* norcal logo_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "norcal logo_circle.png"; path = "images/norcal logo_circle.png"; sourceTree = SOURCE_ROOT; };
+		BDC55CDC1ED5736200A2D1AB /* background-ice1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "background-ice1.jpg"; path = "images/background-ice1.jpg"; sourceTree = SOURCE_ROOT; };
+		BDC55CDE1ED5736700A2D1AB /* background-ice2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "background-ice2.jpg"; path = "images/background-ice2.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 		0889CFC21E00DEFD00B97075 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BDC55CDC1ED5736200A2D1AB /* background-ice1.jpg */,
+				BDC55CDE1ED5736700A2D1AB /* background-ice2.jpg */,
 				08264A991EC58EDF00D46C02 /* CAHALogoMain.png */,
 				0889CFA81E00DEE300B97075 /* blue-devils-logo.jpg */,
 				0889CFA91E00DEE300B97075 /* capital-thunder-logo.gif */,
@@ -498,7 +504,9 @@
 				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
 				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
+				BDC55CDD1ED5736200A2D1AB /* background-ice1.jpg in Resources */,
 				0889CFBB1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg in Resources */,
+				BDC55CDF1ED5736700A2D1AB /* background-ice2.jpg in Resources */,
 				0889CFBC1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif in Resources */,
 				0889CFBA1E00DEE300B97075 /* oakland-bears-logo.jpg in Resources */,
 				0889CFA61E00D8CD00B97075 /* digital-7.ttf in Resources */,
