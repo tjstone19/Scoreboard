@@ -54,8 +54,8 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         else {
             // CHANGE THIS LINE FROM TEST MANAGER TO REAL PUSHER MANAGER
-           // pusherManager = TestPusherManager()
-            pusherManager = PusherManager()
+            pusherManager = TestPusherManager()
+            //pusherManager = PusherManager()
 
             pusherManager.establishConnection()
             pusherManager.updateFunction = updateUI

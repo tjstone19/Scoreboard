@@ -439,7 +439,7 @@
 				TargetAttributes = {
 					08DC67C81DD0158400FD688C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3866873CXK;
+						DevelopmentTeam = 735DFD3LP6;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -857,9 +857,9 @@
 			baseConfigurationReference = 90B036ADD5DC301BCF30F1E2 /* Pods-Scoreboard.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = ScoreboardIcons;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 3866873CXK;
+				DEVELOPMENT_TEAM = 735DFD3LP6;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -876,9 +876,9 @@
 			baseConfigurationReference = 2EBB742F0C2B27800DA38D01 /* Pods-Scoreboard.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = ScoreboardIcons;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 3866873CXK;
+				DEVELOPMENT_TEAM = 735DFD3LP6;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
