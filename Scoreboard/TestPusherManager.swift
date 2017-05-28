@@ -84,6 +84,30 @@ class TestPusherManager: BackendManager {
         }
     }
     
+    // Mark:- Game List Book Keeping Methods
+    
+    /**
+     *  Sorts games in descending order of their date and time.
+     */
+    private func sortGames() {
+        
+        // sort the games in ascending order: 1) Date 2) Hour/Minute
+        gamesArray.sort(by: {$0.0.gameDate! < $0.1.gameDate!})
+    }
+    
+    /**
+     *  Sets the arrays for goals, penaltys, and rosters to empty arrays.
+     *  Called when PusherManager unbinds from a game.
+     */
+    private func clearGameLists() {
+        self.homeGoals = []
+        self.awayGoals = []
+        self.homeRoster = []
+        self.awayRoster = []
+        self.homePenaltys = []
+        self.awayPenaltys = []
+    }
+    
     // Parses array of game dictionaries
     private func parseGames(_ games: [String : AnyObject]) {
         
@@ -97,9 +121,13 @@ class TestPusherManager: BackendManager {
         model.awayTeam = games["away_team"] as? String
         model.homeScore = games["home_goals"] as? String
         model.awayScore = games["away_goals"] as? String
-        
+        model.time = games["time"] as? String
+        model.date = games["date"] as? String
+
         gamesArray.append(model)
         
+        // sort the games in ascending order by date and time
+        sortGames()
         
         callUpdate()
     }
