@@ -43,7 +43,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
-        background.alpha = 0.3
+        background.alpha = 0.4
   
         gamesTable.backgroundView = background
                 
@@ -53,6 +53,9 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         gamesTable.separatorInset = UIEdgeInsets.zero
         gamesTable.layoutMargins = UIEdgeInsets.zero
+        
+        // eliminates empty cell separator lines
+        self.gamesTable.tableFooterView = UIView()
         
         // Do any additional setup after loading the view.
         if pusherManager != nil {
@@ -216,7 +219,11 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
             
             cell.dateLabel.text = game.userFriendlyDate!
             
+            cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+            
             gamesTable.separatorStyle = .singleLine
+            
+            
             
             return cell
         }
