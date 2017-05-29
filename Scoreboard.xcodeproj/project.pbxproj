@@ -186,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */,
-				0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */,
 				08DC67D01DD0158400FD688C /* Main.storyboard */,
+				0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */,
 				08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -439,7 +439,7 @@
 				TargetAttributes = {
 					08DC67C81DD0158400FD688C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 735DFD3LP6;
+						DevelopmentTeam = 3866873CXK;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -859,7 +859,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 735DFD3LP6;
+				DEVELOPMENT_TEAM = 3866873CXK;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -878,7 +878,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 735DFD3LP6;
+				DEVELOPMENT_TEAM = 3866873CXK;
 				INFOPLIST_FILE = Scoreboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

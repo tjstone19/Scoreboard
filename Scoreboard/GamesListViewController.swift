@@ -30,6 +30,9 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     // games that are upcoming
     var upcomingGames: [GameModel] = [GameModel]()
     
+    // background image for gamesTable
+    var background = UIImageView()
+    
     // Determines if live or upcoming games are displayed in the table view
     // live = 0   upcoming = 1
     enum SelectedView: Int {
@@ -39,7 +42,10 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        background.image = #imageLiteral(resourceName: "background-ice1.jpg")
+        background.alpha = 0.3
+  
+        gamesTable.backgroundView = background
                 
         gamesTable.register(UINib(nibName: "GameCell", bundle: nil), forCellReuseIdentifier: "aGameCell")
         gamesTable.estimatedRowHeight = 150.0
@@ -187,6 +193,8 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
             
             cell.textLabel?.text = "No Games Available"
             
+            gamesTable.separatorStyle = .none
+            
             return cell
         }
         else {
@@ -208,6 +216,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
             
             cell.dateLabel.text = game.userFriendlyDate!
             
+            gamesTable.separatorStyle = .singleLine
             
             return cell
         }
