@@ -683,20 +683,7 @@ extension PusherManager: PusherDelegate {
     func subscribedToChannel(name: String) {
         print("\nPUSHER CONNECTION SUBSCRIBED TO: \(name)\n")
         
-        var data: Data?
-        
-        do {
-            try data = JSONSerialization.data(withJSONObject: ["data" : "south"], options: .prettyPrinted)
-            
-        }
-        catch {
-            print("JSON FAIL")
-        }
        
-        print(data!)
-        
-        
-        gameChannel.trigger(eventName: "my_event", data: data!)
     }
     func failedToSubscribeToChannel(name: String, response: URLResponse?, data: String?, error: NSError?) {
         print("PUSHER CONNECTION FAILED TO SUBSCRIBE: name = \n" + name + "\nresponse = \(String(describing: response))" + "\ndata= \(String(describing: data))" + "\nerror = \(String(describing: error))")
