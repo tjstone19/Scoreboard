@@ -190,6 +190,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hockey Filled-50.png" width="50" height="50"/>
+        <image name="Hockey-50.png" width="50" height="50"/>
         <image name="Settings Filled-50.png" width="50" height="50"/>
         <image name="Settings-50.png" width="50" height="50"/>
         <image name="Teams Filled-50.png" width="50" height="50"/>

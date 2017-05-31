@@ -63,6 +63,8 @@
 		BDE6C7541EDE9C4D00CBEC06 /* Settings-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7521EDE9C4D00CBEC06 /* Settings-50.png */; };
 		BDE6C7571EDE9C6300CBEC06 /* User Groups Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7551EDE9C6300CBEC06 /* User Groups Filled-50.png */; };
 		BDE6C7581EDE9C6300CBEC06 /* User Groups-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7561EDE9C6300CBEC06 /* User Groups-50.png */; };
+		BDE6C75B1EDE9F7300CBEC06 /* Hockey Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7591EDE9F7300CBEC06 /* Hockey Filled-50.png */; };
+		BDE6C75C1EDE9F7300CBEC06 /* Hockey-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C75A1EDE9F7300CBEC06 /* Hockey-50.png */; };
 		BDFADF601EDE8E0200E196F1 /* Teams Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFADF5E1EDE8E0200E196F1 /* Teams Filled-50.png */; };
 		BDFADF611EDE8E0200E196F1 /* Teams-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFADF5F1EDE8E0200E196F1 /* Teams-50.png */; };
 /* End PBXBuildFile section */
@@ -154,6 +156,8 @@
 		BDE6C7521EDE9C4D00CBEC06 /* Settings-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings-50.png"; path = "images/Settings-50.png"; sourceTree = SOURCE_ROOT; };
 		BDE6C7551EDE9C6300CBEC06 /* User Groups Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Groups Filled-50.png"; path = "images/User Groups Filled-50.png"; sourceTree = SOURCE_ROOT; };
 		BDE6C7561EDE9C6300CBEC06 /* User Groups-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Groups-50.png"; path = "images/User Groups-50.png"; sourceTree = SOURCE_ROOT; };
+		BDE6C7591EDE9F7300CBEC06 /* Hockey Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hockey Filled-50.png"; path = "images/Hockey Filled-50.png"; sourceTree = SOURCE_ROOT; };
+		BDE6C75A1EDE9F7300CBEC06 /* Hockey-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hockey-50.png"; path = "images/Hockey-50.png"; sourceTree = SOURCE_ROOT; };
 		BDFADF5E1EDE8E0200E196F1 /* Teams Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Teams Filled-50.png"; path = "images/Teams Filled-50.png"; sourceTree = SOURCE_ROOT; };
 		BDFADF5F1EDE8E0200E196F1 /* Teams-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Teams-50.png"; path = "images/Teams-50.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -366,6 +370,8 @@
 		BDFADF621EDE8E0600E196F1 /* tab bar icons */ = {
 			isa = PBXGroup;
 			children = (
+				BDE6C7591EDE9F7300CBEC06 /* Hockey Filled-50.png */,
+				BDE6C75A1EDE9F7300CBEC06 /* Hockey-50.png */,
 				BDE6C7551EDE9C6300CBEC06 /* User Groups Filled-50.png */,
 				BDE6C7561EDE9C6300CBEC06 /* User Groups-50.png */,
 				BDE6C7511EDE9C4D00CBEC06 /* Settings Filled-50.png */,
@@ -526,6 +532,7 @@
 				08DC67D41DD0158400FD688C /* Assets.xcassets in Resources */,
 				0832C9A71EC5421800EDEA3E /* Scoreboard.storyboard in Resources */,
 				BDE6C7531EDE9C4D00CBEC06 /* Settings Filled-50.png in Resources */,
+				BDE6C75B1EDE9F7300CBEC06 /* Hockey Filled-50.png in Resources */,
 				BDE6C7571EDE9C6300CBEC06 /* User Groups Filled-50.png in Resources */,
 				0889CFC01E00DEE300B97075 /* tahoe-grizzlies-logo.jpg in Resources */,
 				0889CFB71E00DEE300B97075 /* cougars-logo.jpg in Resources */,
@@ -536,6 +543,7 @@
 				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
 				08DDE0631EDE7D96004166BC /* Hockey-50.png in Resources */,
 				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
+				BDE6C75C1EDE9F7300CBEC06 /* Hockey-50.png in Resources */,
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
 				BDC55CDD1ED5736200A2D1AB /* background-ice1.jpg in Resources */,
 				BDE6C7541EDE9C4D00CBEC06 /* Settings-50.png in Resources */,
