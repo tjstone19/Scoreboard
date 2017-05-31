@@ -16,6 +16,10 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Receives updates from server
     var pusherManager: BackendManager!
     
+    // background image for rosterTable
+    var background = UIImageView()
+
+    
     @IBOutlet weak var rosterTable: UITableView!
     
     override func viewDidLoad() {
@@ -26,6 +30,16 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // set update function
         pusherManager.updateFunction = updateUI
+        
+        // background image
+        background.image = #imageLiteral(resourceName: "background-ice1.jpg")
+        background.alpha = 0.4
+        
+        rosterTable.backgroundView = background
+        
+        // eliminates empty cell separator lines
+        self.rosterTable.tableFooterView = UIView()
+        
         updateUI()
     }
     
@@ -74,6 +88,7 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.goalsLabel.text = roster[indexPath.row].goals
         cell.assistsLabel.text = roster[indexPath.row].assists
         cell.pimsLabel.text = roster[indexPath.row].pims
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         
         return cell
     }

@@ -20,6 +20,8 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
     // Contains penalty data
     var penaltys: [PenaltyModel] = [PenaltyModel]()
     
+    // background image for penaltyTable
+    var background = UIImageView()
     
     /* Player # and name or “Bench”
      Type of penalty (e.g. minor, major, etc)
@@ -32,6 +34,15 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // background image
+        background.image = #imageLiteral(resourceName: "background-ice1.jpg")
+        background.alpha = 0.4
+        
+        penaltyTable.backgroundView = background
+        
+        // eliminates empty cell separator lines
+        self.penaltyTable.tableFooterView = UIView()
+        
         // Do any additional setup after loading the view.
         updateUI()
     }
@@ -108,6 +119,7 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
         cell.playerLabel.text = penaltys[indexPath.row].player
         cell.typeLabel.text = penaltys[indexPath.row].type
         cell.lengthLabel.text = penaltys[indexPath.row].length
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         
         return cell
     }
