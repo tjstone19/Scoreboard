@@ -19,7 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.47058823529999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="mrT-Ak-Kaa" kind="relationship" relationship="viewControllers" id="PiK-NC-Xsf"/>
@@ -130,7 +132,7 @@
                             <constraint firstItem="gQ5-em-fE2" firstAttribute="top" secondItem="hqF-O5-w6p" secondAttribute="bottom" id="hpm-wv-hce"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" enabled="NO" title="Today's Games" id="GvS-vX-vFe"/>
+                    <tabBarItem key="tabBarItem" title="Today's Games" id="GvS-vX-vFe"/>
                     <navigationItem key="navigationItem" id="X1b-zh-Eay">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="EYe-Ef-wNN">
