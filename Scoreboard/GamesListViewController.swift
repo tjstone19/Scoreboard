@@ -42,6 +42,12 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // add seg controller to nav bar
+        self.navigationController?.navigationBar.addSubview(segController)
+        
+        // Force Portrait mode
+        forcePortrait()
+        
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
         background.alpha = 0.4
   
@@ -71,12 +77,21 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         }
     }
     
+    private func forcePortrait() {
+        // Force Portrait mode
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+    }
+    
     /**
      *  Called when this view becomes the first responder.
      *  Deselects any selected rows from the games table.
      *  Unbinds pusher manager from the current game channel.
      */
     override func viewDidAppear(_ animated: Bool) {
+        // Force Portrait mode
+        forcePortrait()
+        
         // Deselect row
         if gamesTable.indexPathForSelectedRow != nil {
             self.gamesTable.deselectRow(at: gamesTable.indexPathForSelectedRow!,

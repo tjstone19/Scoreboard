@@ -48,7 +48,15 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // hide tab bar on bottom
+        self.tabBarController?.hidesBottomBarWhenPushed = true
+        
+        // Force landscape mode
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
+        
         // Do any additional setup after loading the view.
         pusherManager?.updateFunction = updateUI
         
@@ -65,6 +73,8 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
         updateUI()
     }
     
+    
+   
     // Updates pusher managers function to scoreboard view updateUI() function.
     // Resets the goals missed count to 0
     // Updates the UI to display current game status.
