@@ -19,8 +19,20 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
     // Contains list of goal information
     var goals: [ScoreModel] = [ScoreModel]()
     
+    // background image for scoreTable
+    var background = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // background image
+        background.image = #imageLiteral(resourceName: "background-ice1.jpg")
+        background.alpha = 0.4
+        
+        scoreTable.backgroundView = background
+        
+        // eliminates empty cell separator lines
+        self.scoreTable.tableFooterView = UIView()
         
         updateUI()
     }
@@ -96,6 +108,7 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
         cell.goalScorerLabel.text = goals[indexPath.row].goalScorer
         cell.assist1Label.text = goals[indexPath.row].assist1
         cell.assist2Label.text = goals[indexPath.row].assist2
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         
         return cell
     }

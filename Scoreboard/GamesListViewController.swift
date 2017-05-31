@@ -48,6 +48,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         // Force Portrait mode
         forcePortrait()
         
+        // background image
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
         background.alpha = 0.4
   
