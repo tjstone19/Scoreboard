@@ -18,7 +18,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="nM9-Vo-hVC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.9983277197" green="0.99382312959999997" blue="0.98789332149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.47058823529999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.9983277197" green="0.99382312959999997" blue="0.98789332149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="mrT-Ak-Kaa" kind="relationship" relationship="viewControllers" id="PiK-NC-Xsf"/>
@@ -167,12 +169,12 @@
         <scene sceneID="Xxv-cp-Cj2">
             <objects>
                 <navigationController title="Navigation Bar" id="mrT-Ak-Kaa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CBE-mV-lHG"/>
+                    <tabBarItem key="tabBarItem" title="" image="Hockey-50.png" selectedImage="Hockey Filled-50.png" id="CBE-mV-lHG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="XPv-0Q-VgO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.47058823529411764" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.47058823529999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,4 +190,8 @@
             <point key="canvasLocation" x="-3831" y="-74"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hockey Filled-50.png" width="50" height="50"/>
+        <image name="Hockey-50.png" width="50" height="50"/>
+    </resources>
 </document>

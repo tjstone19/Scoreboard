@@ -33,6 +33,10 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     // background image for gamesTable
     var background = UIImageView()
     
+    // color for nav bar
+    let barColor = UIColor(red:0.00, green:0.47, blue:0.71, alpha:1.0)
+
+    
     // Determines if live or upcoming games are displayed in the table view
     // live = 0   upcoming = 1
     enum SelectedView: Int {
@@ -89,6 +93,8 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
      *  Unbinds pusher manager from the current game channel.
      */
     override func viewDidAppear(_ animated: Bool) {
+       
+
         // Force Portrait mode
         forcePortrait()
         

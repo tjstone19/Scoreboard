@@ -20,6 +20,11 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // set nav bar title to the name of the team
+        self.navigationItem.title = isHome ? pusherManager.currentGame.homeTeam : pusherManager.currentGame.awayTeam
+        
+        // set update function
         pusherManager.updateFunction = updateUI
         updateUI()
     }

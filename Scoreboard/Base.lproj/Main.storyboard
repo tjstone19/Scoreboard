@@ -146,6 +146,19 @@
             </objects>
             <point key="canvasLocation" x="30.134932533733135" y="-1133.5999999999999"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tXB-0K-Bze">
+            <objects>
+                <navigationController id="38N-Dc-A6J" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6UA-j3-rwb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0U8-PY-MAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1208" y="-265"/>
+        </scene>
         <!--Scoreboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -396,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.929535232383813" y="124"/>
+            <point key="canvasLocation" x="44" y="114"/>
         </scene>
         <!--Roster View Controller-->
         <scene sceneID="Jpw-6X-pqN">
@@ -674,12 +687,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syf-4H-aKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16.641679160419791" y="940"/>
+            <point key="canvasLocation" x="182" y="1177"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Syh-Ru-QhD"/>
         <segue reference="s5x-NY-CGg"/>
-        <segue reference="aaz-Sv-8ts"/>
         <segue reference="zjk-Wm-JeO"/>
     </inferredMetricsTieBreakers>
 </document>

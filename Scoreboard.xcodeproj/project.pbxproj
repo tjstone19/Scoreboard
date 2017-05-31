@@ -46,6 +46,8 @@
 		08DC67D71DD0158400FD688C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */; };
 		08DC67E21DD0158400FD688C /* ScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC67E11DD0158400FD688C /* ScoreboardTests.swift */; };
 		08DC67ED1DD0158400FD688C /* ScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC67EC1DD0158400FD688C /* ScoreboardUITests.swift */; };
+		08DDE0621EDE7D96004166BC /* Hockey Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DDE0601EDE7D96004166BC /* Hockey Filled-50.png */; };
+		08DDE0631EDE7D96004166BC /* Hockey-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DDE0611EDE7D96004166BC /* Hockey-50.png */; };
 		08EB6E541DDFD02E0043CFA9 /* PusherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */; };
 		08EB6E561DDFD04D0043CFA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EB6E551DDFD04D0043CFA9 /* Constants.swift */; };
 		08F087BF1DD14A6C006E5963 /* ScoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F087BE1DD14A6C006E5963 /* ScoreListTableViewCell.swift */; };
@@ -124,6 +126,8 @@
 		08DC67E81DD0158400FD688C /* ScoreboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DC67EC1DD0158400FD688C /* ScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardUITests.swift; sourceTree = "<group>"; };
 		08DC67EE1DD0158400FD688C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DDE0601EDE7D96004166BC /* Hockey Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hockey Filled-50.png"; path = "images/Hockey Filled-50.png"; sourceTree = SOURCE_ROOT; };
+		08DDE0611EDE7D96004166BC /* Hockey-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hockey-50.png"; path = "images/Hockey-50.png"; sourceTree = SOURCE_ROOT; };
 		08EB6E531DDFD02E0043CFA9 /* PusherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherManager.swift; sourceTree = "<group>"; };
 		08EB6E551DDFD04D0043CFA9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		08F087BE1DD14A6C006E5963 /* ScoreListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreListTableViewCell.swift; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 		0889CFC21E00DEFD00B97075 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				08DDE0601EDE7D96004166BC /* Hockey Filled-50.png */,
+				08DDE0611EDE7D96004166BC /* Hockey-50.png */,
 				BDC55CDC1ED5736200A2D1AB /* background-ice1.jpg */,
 				BDC55CDE1ED5736700A2D1AB /* background-ice2.jpg */,
 				08264A991EC58EDF00D46C02 /* CAHALogoMain.png */,
@@ -491,6 +497,7 @@
 				08264A9A1EC58EDF00D46C02 /* CAHALogoMain.png in Resources */,
 				0889CFBD1E00DEE300B97075 /* santa-rosa-flyers-logo.jpg in Resources */,
 				0889CFBE1E00DEE300B97075 /* sf-sabercats-logo.png in Resources */,
+				08DDE0621EDE7D96004166BC /* Hockey Filled-50.png in Resources */,
 				0889CFB51E00DEE300B97075 /* blue-devils-logo.jpg in Resources */,
 				0895A3591E03A23000B2FC8B /* goal-horn.mp3 in Resources */,
 				0889CFB81E00DEE300B97075 /* fresno-monsters-logo.jpg in Resources */,
@@ -502,6 +509,7 @@
 				0832C9AB1EC54F0E00EDEA3E /* GameCell.xib in Resources */,
 				BD27855B1ED55F19009F702E /* norcal logo_circle.png in Resources */,
 				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
+				08DDE0631EDE7D96004166BC /* Hockey-50.png in Resources */,
 				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
 				BDC55CDD1ED5736200A2D1AB /* background-ice1.jpg in Resources */,
