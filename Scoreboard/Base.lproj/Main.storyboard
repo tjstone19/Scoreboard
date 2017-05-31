@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -46,12 +46,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qan-TZ-uP0">
+                                <rect key="frame" x="367" y="27" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pz2-Jc-tl6">
-                                <rect key="frame" x="0.0" y="101" width="667" height="274"/>
+                                <rect key="frame" x="0.0" y="48" width="667" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scoreCell" id="Bvn-0q-TBI" customClass="ScoreListTableViewCell" customModule="Scoreboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="667" height="44"/>
@@ -107,7 +112,6 @@
                                                 <constraint firstItem="T61-BY-MMD" firstAttribute="leading" secondItem="1VG-K8-a6L" secondAttribute="leadingMargin" constant="24" id="wnx-Ji-340"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="assist1Label" destination="7cF-yZ-qCL" id="Tol-W6-5yg"/>
                                             <outlet property="assist2Label" destination="5JO-ed-WW1" id="YZd-ma-8Iz"/>
@@ -122,14 +126,8 @@
                                     <outlet property="delegate" destination="uiI-au-IJH" id="U4K-PE-XNY"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qan-TZ-uP0">
-                                <rect key="frame" x="367" y="27" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="Akw-ET-QdQ" secondAttribute="leading" id="A88-dh-kCq"/>
                             <constraint firstItem="Jw0-mP-UiK" firstAttribute="leading" secondItem="Akw-ET-QdQ" secondAttribute="trailing" constant="31" id="C2k-PR-x9I"/>
@@ -147,13 +145,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suV-if-wFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30.134932533733135" y="-1133.5999999999999"/>
+            <point key="canvasLocation" x="121.88905547226388" y="-1132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tXB-0K-Bze">
             <objects>
                 <navigationController id="38N-Dc-A6J" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6UA-j3-rwb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6UA-j3-rwb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -253,19 +251,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfW-Yz-uJP">
-                                <rect key="frame" x="308" y="83" width="51.5" height="23"/>
+                                <rect key="frame" x="308.5" y="83" width="51.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUE-8t-8jr">
-                                <rect key="frame" x="303" y="165" width="62.5" height="23"/>
+                                <rect key="frame" x="303.5" y="165" width="62.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RD9-xs-hgm">
-                                <rect key="frame" x="332" y="203" width="4.5" height="23"/>
+                                <rect key="frame" x="332.5" y="203" width="4.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -431,7 +429,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rosterCell" id="F7H-UF-hcu" customClass="RosterTableViewCell" customModule="Scoreboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="667" height="44"/>
@@ -484,7 +481,6 @@
                                                 <constraint firstItem="zd1-et-aQo" firstAttribute="leading" secondItem="ISc-nm-kAn" secondAttribute="leadingMargin" constant="479" id="zw2-2Y-a1k"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="assistsLabel" destination="zd1-et-aQo" id="GQr-4s-2D6"/>
                                             <outlet property="goalsLabel" destination="yXB-bN-zcf" id="DYV-4L-e8M"/>
@@ -530,7 +526,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yIF-7S-pL2" firstAttribute="leading" secondItem="NnS-IF-kt0" secondAttribute="leadingMargin" constant="549" id="7XZ-Tu-R7j"/>
                             <constraint firstItem="7YC-CN-bfd" firstAttribute="top" secondItem="G2H-QJ-Gh9" secondAttribute="bottom" id="Cpu-9M-M9Z"/>
@@ -571,7 +567,6 @@
                                     <constraint firstAttribute="width" secondItem="v6w-Xm-VAY" secondAttribute="height" multiplier="667:274" id="jSS-O4-AyO"/>
                                 </constraints>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="penaltyCell" id="vem-ga-TGH" customClass="PenaltyListTableViewCell" customModule="Scoreboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="774" height="44"/>
@@ -627,7 +622,6 @@
                                                 <constraint firstItem="VMx-Zy-8Y2" firstAttribute="centerY" secondItem="v8w-zz-ign" secondAttribute="centerY" id="vZx-Xs-bjA"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="lengthLabel" destination="VMx-Zy-8Y2" id="pFI-Ks-nXC"/>
                                             <outlet property="periodLabel" destination="pPX-RN-nTi" id="1Xy-Im-bcc"/>
@@ -673,7 +667,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sj0-Q8-Aqc" firstAttribute="leading" secondItem="yEN-KV-PJy" secondAttribute="trailing" constant="104" id="2kk-oj-JVP"/>
                             <constraint firstItem="Rdh-KC-7Wh" firstAttribute="centerY" secondItem="W5x-IL-fJB" secondAttribute="centerY" id="69j-6f-LPs"/>

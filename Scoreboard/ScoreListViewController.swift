@@ -24,6 +24,16 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // background image
+        background.image = #imageLiteral(resourceName: "background-ice1.jpg")
+        background.alpha = 0.4
+        
+        scoreTable.backgroundView = background
+        
+        // eliminates empty cell separator lines
+        scoreTable.tableFooterView = UIView()
+        
         updateUI()
     }
 

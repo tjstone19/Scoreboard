@@ -208,8 +208,8 @@
 		081681291DD0261700A53DE3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				081681251DD0217C00A53DE3 /* ScoreboardViewController.swift */,
 				081681271DD025B700A53DE3 /* GamesListViewController.swift */,
+				081681251DD0217C00A53DE3 /* ScoreboardViewController.swift */,
 				0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */,
 				08F087C01DD14BAB006E5963 /* PenaltyListViewController.swift */,
 				08849B061DE8E5F800DE41DB /* RosterViewController.swift */,
