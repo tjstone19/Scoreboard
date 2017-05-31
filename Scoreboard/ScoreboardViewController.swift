@@ -46,21 +46,27 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     
     var player: AVAudioPlayer?
     
+    // stores the value of the old nav bar color
+    //  restores the nav bar color in prepare for segue method
+    var navColor: UIColor?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // hide tab bar on bottom
-        self.tabBarController?.hidesBottomBarWhenPushed = true
+        // Adjust nav bar properties
+        setUpNavBar()
         
         // Force landscape mode
-        let value = UIInterfaceOrientation.landscapeLeft.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+        forceLandscape()
         
-        
-        // Do any additional setup after loading the view.
+        // Set update function for pusher manager to call when there is an update
         pusherManager?.updateFunction = updateUI
         
+        // Set nav bar title text
         self.navigationItem.title = (currentGame?.homeTeam)! + " vs " + (currentGame?.awayTeam)!
+        
         
         if let homeImage = Constants.getLogo(team: (currentGame?.homeTeam)!) {
             homeLogo.image = homeImage
@@ -69,17 +75,61 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
         if let awayImage = Constants.getLogo(team: (currentGame?.awayTeam)!) {
             awayLogo.image = awayImage
         }
+        
         firstUpdate = true
         updateUI()
     }
     
+    private func forceLandscape() {
+        // Force landscape mode
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+    }
     
+    
+    private func setUpNavBar() {
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
+        
+        // set back button color to black
+        navigationController?.navigationBar.tintColor = UIColor.black
+        
+        // hide nav bar on swipe
+        navigationController?.hidesBarsOnTap = true
+        
+        
+        // hide tab bar on bottom
+        tabBarController?.hidesBottomBarWhenPushed = true
+    }
+    
+    // Called before the view controller resigns first responder.
+    // Restores the navigation bar properties back to default.
+    override func viewWillDisappear(_ animated: Bool) {
+        // nav bar to blue
+        navigationController?.navigationBar.barTintColor = UIColor(red:0.00, green:0.47, blue:0.71, alpha:1.0)
+        
+        // nav bar title color to white
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+       
+        // set back button color to white
+        navigationController?.navigationBar.tintColor = UIColor.white
+        
+        // hide nav bar when tapped
+        navigationController?.hidesBarsOnTap = false
+        
+        // hide tab bar on bottom
+        tabBarController?.hidesBottomBarWhenPushed = false
+        
+        // set navigation bar visible
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
    
     // Updates pusher managers function to scoreboard view updateUI() function.
     // Resets the goals missed count to 0
     // Updates the UI to display current game status.
     override func viewDidAppear(_ animated: Bool) {
         pusherManager?.updateFunction = updateUI
+        setUpNavBar()
         updateUI()
     }
     
@@ -176,6 +226,8 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         switch segue.identifier! {
@@ -221,5 +273,6 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
             
         }
     }
+
  
 }

@@ -32,7 +32,7 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
         scoreTable.backgroundView = background
         
         // eliminates empty cell separator lines
-        self.scoreTable.tableFooterView = UIView()
+        scoreTable.tableFooterView = UIView()
         
         updateUI()
     }
