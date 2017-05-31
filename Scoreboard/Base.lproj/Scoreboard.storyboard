@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U8F-Uo-RzC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U8F-Uo-RzC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,6 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                     </tabBar>
                     <connections>
                         <segue destination="mrT-Ak-Kaa" kind="relationship" relationship="viewControllers" id="PiK-NC-Xsf"/>
@@ -44,7 +45,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Your Club" id="9xH-CQ-Ul7"/>
+                    <tabBarItem key="tabBarItem" title="" image="User Groups-50.png" selectedImage="User Groups Filled-50.png" id="9xH-CQ-Ul7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKA-CK-cgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="JQu-6J-gwV"/>
+                    <tabBarItem key="tabBarItem" title="" image="Settings-50.png" selectedImage="Settings Filled-50.png" id="JQu-6J-gwV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIe-TL-wjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Your Team" id="ckH-or-jnv"/>
+                    <tabBarItem key="tabBarItem" title="" image="Teams Filled-50.png" selectedImage="Teams Filled-50.png" id="ckH-or-jnv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzr-kb-tMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,4 +189,11 @@
             <point key="canvasLocation" x="-3831" y="-74"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Settings Filled-50.png" width="50" height="50"/>
+        <image name="Settings-50.png" width="50" height="50"/>
+        <image name="Teams Filled-50.png" width="50" height="50"/>
+        <image name="User Groups Filled-50.png" width="50" height="50"/>
+        <image name="User Groups-50.png" width="50" height="50"/>
+    </resources>
 </document>
