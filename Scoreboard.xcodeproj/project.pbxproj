@@ -16,6 +16,17 @@
 		08264A9A1EC58EDF00D46C02 /* CAHALogoMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 08264A991EC58EDF00D46C02 /* CAHALogoMain.png */; };
 		0832C9A71EC5421800EDEA3E /* Scoreboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */; };
 		0832C9AB1EC54F0E00EDEA3E /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */; };
+		085A7F3B1EE4FB27003CE989 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F3A1EE4FB27003CE989 /* SettingsViewController.swift */; };
+		085A7F3F1EE500C8003CE989 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F3D1EE500C8003CE989 /* SoundTableViewCell.swift */; };
+		085A7F401EE500C8003CE989 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085A7F3E1EE500C8003CE989 /* SoundTableViewCell.xib */; };
+		085A7F431EE502C7003CE989 /* ScreenSaverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F411EE502C7003CE989 /* ScreenSaverTableViewCell.swift */; };
+		085A7F441EE502C7003CE989 /* ScreenSaverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085A7F421EE502C7003CE989 /* ScreenSaverTableViewCell.xib */; };
+		085A7F471EE5041B003CE989 /* MyClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F451EE5041B003CE989 /* MyClubCell.swift */; };
+		085A7F481EE5041B003CE989 /* MyClubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085A7F461EE5041B003CE989 /* MyClubCell.xib */; };
+		085A7F4B1EE50497003CE989 /* MyTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F491EE50497003CE989 /* MyTeamCell.swift */; };
+		085A7F4C1EE50497003CE989 /* MyTeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085A7F4A1EE50497003CE989 /* MyTeamCell.xib */; };
+		085A7F4E1EE521F6003CE989 /* MyClubPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F4D1EE521F6003CE989 /* MyClubPopUpView.swift */; };
+		085A7F501EE52A53003CE989 /* MyTeamPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F4F1EE52A53003CE989 /* MyTeamPopUpView.swift */; };
 		08849B071DE8E5F800DE41DB /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08849B061DE8E5F800DE41DB /* RosterViewController.swift */; };
 		08849B091DE8E7D300DE41DB /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */; };
 		0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0888BA081DD159ED00C2B1F9 /* GameModel.swift */; };
@@ -96,6 +107,17 @@
 		08264A991EC58EDF00D46C02 /* CAHALogoMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CAHALogoMain.png; path = images/CAHALogoMain.png; sourceTree = SOURCE_ROOT; };
 		0832C9A61EC5421800EDEA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Scoreboard.storyboard; sourceTree = "<group>"; };
 		0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		085A7F3A1EE4FB27003CE989 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		085A7F3D1EE500C8003CE989 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		085A7F3E1EE500C8003CE989 /* SoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
+		085A7F411EE502C7003CE989 /* ScreenSaverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSaverTableViewCell.swift; sourceTree = "<group>"; };
+		085A7F421EE502C7003CE989 /* ScreenSaverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenSaverTableViewCell.xib; sourceTree = "<group>"; };
+		085A7F451EE5041B003CE989 /* MyClubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClubCell.swift; sourceTree = "<group>"; };
+		085A7F461EE5041B003CE989 /* MyClubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyClubCell.xib; sourceTree = "<group>"; };
+		085A7F491EE50497003CE989 /* MyTeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTeamCell.swift; sourceTree = "<group>"; };
+		085A7F4A1EE50497003CE989 /* MyTeamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTeamCell.xib; sourceTree = "<group>"; };
+		085A7F4D1EE521F6003CE989 /* MyClubPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClubPopUpView.swift; sourceTree = "<group>"; };
+		085A7F4F1EE52A53003CE989 /* MyTeamPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTeamPopUpView.swift; sourceTree = "<group>"; };
 		08849B061DE8E5F800DE41DB /* RosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
 		08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		0888BA081DD159ED00C2B1F9 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
@@ -203,7 +225,6 @@
 		0813D7441EA5C1E500E5A9CC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */,
 				08DC67D01DD0158400FD688C /* Main.storyboard */,
 				0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */,
 				08DC67D51DD0158400FD688C /* LaunchScreen.storyboard */,
@@ -227,6 +248,9 @@
 				0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */,
 				08F087C01DD14BAB006E5963 /* PenaltyListViewController.swift */,
 				08849B061DE8E5F800DE41DB /* RosterViewController.swift */,
+				085A7F3A1EE4FB27003CE989 /* SettingsViewController.swift */,
+				085A7F4D1EE521F6003CE989 /* MyClubPopUpView.swift */,
+				085A7F4F1EE52A53003CE989 /* MyTeamPopUpView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -234,11 +258,20 @@
 		0816812A1DD0265E00A53DE3 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */,
 				0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */,
 				08F087BE1DD14A6C006E5963 /* ScoreListTableViewCell.swift */,
 				08F087C21DD14BFE006E5963 /* PenaltyListTableViewCell.swift */,
 				08849B081DE8E7D300DE41DB /* RosterTableViewCell.swift */,
 				0889CFC61E00F7E700B97075 /* GameCell.swift */,
+				085A7F3D1EE500C8003CE989 /* SoundTableViewCell.swift */,
+				085A7F411EE502C7003CE989 /* ScreenSaverTableViewCell.swift */,
+				085A7F451EE5041B003CE989 /* MyClubCell.swift */,
+				085A7F491EE50497003CE989 /* MyTeamCell.swift */,
+				085A7F421EE502C7003CE989 /* ScreenSaverTableViewCell.xib */,
+				085A7F3E1EE500C8003CE989 /* SoundTableViewCell.xib */,
+				085A7F461EE5041B003CE989 /* MyClubCell.xib */,
+				085A7F4A1EE50497003CE989 /* MyTeamCell.xib */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -522,6 +555,7 @@
 			files = (
 				08DC67D71DD0158400FD688C /* LaunchScreen.storyboard in Resources */,
 				BDFADF601EDE8E0200E196F1 /* Teams Filled-50.png in Resources */,
+				085A7F4C1EE50497003CE989 /* MyTeamCell.xib in Resources */,
 				08264A9A1EC58EDF00D46C02 /* CAHALogoMain.png in Resources */,
 				0889CFBD1E00DEE300B97075 /* santa-rosa-flyers-logo.jpg in Resources */,
 				0889CFBE1E00DEE300B97075 /* sf-sabercats-logo.png in Resources */,
@@ -540,6 +574,7 @@
 				0832C9AB1EC54F0E00EDEA3E /* GameCell.xib in Resources */,
 				BD27855B1ED55F19009F702E /* norcal logo_circle.png in Resources */,
 				BDFADF611EDE8E0200E196F1 /* Teams-50.png in Resources */,
+				085A7F401EE500C8003CE989 /* SoundTableViewCell.xib in Resources */,
 				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
 				08DDE0631EDE7D96004166BC /* Hockey-50.png in Resources */,
 				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
@@ -547,7 +582,9 @@
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
 				BDC55CDD1ED5736200A2D1AB /* background-ice1.jpg in Resources */,
 				BDE6C7541EDE9C4D00CBEC06 /* Settings-50.png in Resources */,
+				085A7F481EE5041B003CE989 /* MyClubCell.xib in Resources */,
 				0889CFBB1E00DEE300B97075 /* redwood-city-blackstars-logo.jpg in Resources */,
+				085A7F441EE502C7003CE989 /* ScreenSaverTableViewCell.xib in Resources */,
 				0889CFBC1E00DEE300B97075 /* santa-clara-blackhaws-logo.gif in Resources */,
 				0889CFBA1E00DEE300B97075 /* oakland-bears-logo.jpg in Resources */,
 				BDE6C7581EDE9C6300CBEC06 /* User Groups-50.png in Resources */,
@@ -717,11 +754,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0813D7431EA5A5CB00E5A9CC /* BackendManager.swift in Sources */,
+				085A7F4E1EE521F6003CE989 /* MyClubPopUpView.swift in Sources */,
 				08D935151DE4F813002A63DE /* Encryptor.swift in Sources */,
 				08AB57C51DD16B7A00E354E4 /* ScoreModel.swift in Sources */,
 				08AB57C71DD16C1800E354E4 /* PlayerModel.swift in Sources */,
 				081681281DD025B700A53DE3 /* GamesListViewController.swift in Sources */,
 				089089CA1DE29DF100EAEDB4 /* ScoreboardModel.swift in Sources */,
+				085A7F3F1EE500C8003CE989 /* SoundTableViewCell.swift in Sources */,
 				081681261DD0217C00A53DE3 /* ScoreboardViewController.swift in Sources */,
 				0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */,
 				08DC67CD1DD0158400FD688C /* AppDelegate.swift in Sources */,
@@ -729,13 +768,18 @@
 				0816812C1DD0268300A53DE3 /* GameTableViewCell.swift in Sources */,
 				08F087C11DD14BAB006E5963 /* PenaltyListViewController.swift in Sources */,
 				08F087C31DD14BFE006E5963 /* PenaltyListTableViewCell.swift in Sources */,
+				085A7F4B1EE50497003CE989 /* MyTeamCell.swift in Sources */,
+				085A7F3B1EE4FB27003CE989 /* SettingsViewController.swift in Sources */,
 				08F087BF1DD14A6C006E5963 /* ScoreListTableViewCell.swift in Sources */,
 				08EB6E541DDFD02E0043CFA9 /* PusherManager.swift in Sources */,
 				08849B091DE8E7D300DE41DB /* RosterTableViewCell.swift in Sources */,
 				08EB6E561DDFD04D0043CFA9 /* Constants.swift in Sources */,
 				0813D7411EA5A4FF00E5A9CC /* TestPusherManager.swift in Sources */,
 				0889CFC71E00F7E700B97075 /* GameCell.swift in Sources */,
+				085A7F431EE502C7003CE989 /* ScreenSaverTableViewCell.swift in Sources */,
+				085A7F501EE52A53003CE989 /* MyTeamPopUpView.swift in Sources */,
 				081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */,
+				085A7F471EE5041B003CE989 /* MyClubCell.swift in Sources */,
 				08AB58051DD172D100E354E4 /* PenaltyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

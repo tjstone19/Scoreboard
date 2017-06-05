@@ -66,7 +66,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         gamesTable.layoutMargins = UIEdgeInsets.zero
         
         // eliminates empty cell separator lines
-        self.gamesTable.tableFooterView = UIView()
+        gamesTable.removeEmptyLines()
         
         // Do any additional setup after loading the view.
         if pusherManager != nil {
@@ -290,5 +290,12 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
      }
 }
 
-
+extension UITableView {
+    
+    // Eliminates empty cell separator lines
+    func removeEmptyLines() {
+        
+        tableFooterView = UIView()
+    }
+}
 

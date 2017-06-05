@@ -30,6 +30,15 @@ class Constants {
     static let TIMEZONE = TimeZone(secondsFromGMT: 0)
 
     
+    
+    // Background image for views
+    static let BACKGROUND_IMAGE = #imageLiteral(resourceName: "background-ice1")
+    
+    // Clubs in the league
+    static let CLUBS = ["California Cougars","Capital Thunder","Golden State Elite Eagles","Fresno Jr. Monsters","Oakland Bears", "Redwood City Black Stars", "San Francisco Sabercats", "San Jose Jr. Sharks", "Santa Clara Blackhawks", "Santa Rosa Flyers","Stockton Colts","Tahoe Grizzlies","Tri-Valley Blue", "Vacaville Jets"]
+    
+    static let TEAMS = ["Mite X", "Squirt A", "Squirt B", "Pee Wee A"]
+    
     static func getLogo(team: String) ->  UIImage? {
         let lowerTeam = team.lowercased()
         switch lowerTeam {
