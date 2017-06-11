@@ -379,11 +379,11 @@
 			isa = PBXGroup;
 			children = (
 				08DC67CC1DD0158400FD688C /* AppDelegate.swift */,
-				0813D7441EA5C1E500E5A9CC /* Storyboards */,
-				0889CFA71E00D8E600B97075 /* Resources */,
-				08EB6E571DDFD0610043CFA9 /* Utility */,
 				0888BA071DD159D300C2B1F9 /* Models */,
+				0889CFA71E00D8E600B97075 /* Resources */,
+				0813D7441EA5C1E500E5A9CC /* Storyboards */,
 				0816812A1DD0265E00A53DE3 /* TableCells */,
+				08EB6E571DDFD0610043CFA9 /* Utility */,
 				081681291DD0261700A53DE3 /* ViewControllers */,
 			);
 			path = Scoreboard;

@@ -27,6 +27,15 @@ class SoundTableViewCell: UITableViewCell {
     
     // Called when the user toggles sounds on and off.
     @IBAction func switchChanged(_ sender: Any) {
-        // TODO save value of switch 
+        // create settings object and load saved settings
+        let settings: UserSettings = UserSettings()
+        settings.load()
+        
+        // update sounds setting
+        settings.sounds = soundSwitch.isOn
+        
+        // save the new settings to the device
+        settings.save()
+
     }
 }

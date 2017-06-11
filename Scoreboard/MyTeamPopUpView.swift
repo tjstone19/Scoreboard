@@ -10,6 +10,8 @@ import UIKit
 
 class MyTeamPopUpView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // Callback function to call before this view dismisses itself
+    var callBack: (() -> Void)?
     
     
     override func viewDidLoad() {
@@ -87,8 +89,21 @@ class MyTeamPopUpView: UIViewController, UITableViewDataSource, UITableViewDeleg
     // Called when the user taps on a cell.
     // Save club to device and dismisses this view.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: save the selected club to the device
+        // create settings object and load saved settings
+        let settings: UserSettings = UserSettings()
+        settings.load()
+        
+        // update favorite team setting
+        settings.team = Constants.TEAMS[indexPath.row]
+        
+        // save the new settings to the device
+        settings.save()
+        
+        // remove this pop up view from nav stack
         self.removeAnimate()
+        
+        // call the callback function to notify displaying view
+        callBack!()
     }
     
 }

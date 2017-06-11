@@ -8,9 +8,12 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate {
+    
     @IBOutlet weak var settingsTable: UITableView!
+    
+    // Settings object that saves and loads settings to/from the device
+    var settings: UserSettings = UserSettings()
     
     // background image
     var background = UIImageView()
@@ -32,8 +35,24 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         settingsTable.removeEmptyLines()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        updateSettings()
+    }
+    
+    /**
+     *  Loads saved settings from the device.
+     */
+    private func updateSettings() {
+        settings.load()
+        settingsTable.reloadData()
+    }
 
     
+    /**
+     *  Sets up the background image for the settings table.
+     */
     private func setupBackground() {
         // set up background
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
@@ -85,19 +104,34 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             // My Club
             case .MyClub:
                 cell = settingsTable.dequeueReusableCell(withIdentifier: "MyClubCell", for: indexPath)
-                // TODO set detail label for selected club
+                
+                
+                // set detail label for selected club
+                cell.detailTextLabel?.text = settings.club ?? "Not Set"
                 break
+            
             // My Team
             case .MyTeam:
                 cell = settingsTable.dequeueReusableCell(withIdentifier: "MyTeamCell", for: indexPath)
+                
+                // set detail label for selected club
+                cell.detailTextLabel?.text = settings.team ?? "Not Set"
                 break
+            
             // Sounds
             case .Sounds:
-                cell = settingsTable.dequeueReusableCell(withIdentifier: "SoundCell", for: indexPath) as! SoundTableViewCell
+                cell = settingsTable.dequeueReusableCell(withIdentifier: "SoundCell", for: indexPath)
+                
+                // set switch to settings value
+                (cell as! SoundTableViewCell).soundSwitch.isOn = settings.sounds
                 break
+            
             // Screen Saver
             case .ScreenSaver:
                 cell = settingsTable.dequeueReusableCell(withIdentifier: "ScreenSaverCell", for: indexPath) as! ScreenSaverTableViewCell
+                
+                // set switch to settings value
+                (cell as! ScreenSaverTableViewCell).screenSwitch.isOn = settings.screenSaver
                 break
         }
         
@@ -109,17 +143,43 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     // Instanciates pop up view with the given name
     private func createPopUpView(name: String) {
-        // create my club pop up view controller
-        let popOverVC = UIStoryboard(name: "Scoreboard", bundle: nil).instantiateViewController(withIdentifier: name)
+        var popOverVC: UIViewController?
+        
+        switch name {
+            case "MyClubPopUpView":
+                // create my club pop up view controller
+                popOverVC = UIStoryboard(name: "Scoreboard", bundle: nil).instantiateViewController(withIdentifier: name) as! MyClubPopUpView
+                
+                // set callback function: called when pop up is dismissed
+                (popOverVC as! MyClubPopUpView).callBack = unwindFromPopUp
+                break
+            case "MyTeamPopUpView":
+                popOverVC = UIStoryboard(name: "Scoreboard", bundle: nil).instantiateViewController(withIdentifier: name) as! MyTeamPopUpView
+                
+                // set callback function: called when pop up is dismissed
+                (popOverVC as! MyTeamPopUpView).callBack = unwindFromPopUp
+                break
+            default:
+                break
+        }
         
         // add pop up as child view
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
+        self.addChildViewController(popOverVC!)
+        popOverVC?.view.frame = self.view.frame
         
+       
         // add pop up to view
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
+        self.view.addSubview((popOverVC?.view)!)
+        popOverVC?.didMove(toParentViewController: self)
     }
+   
+    /**
+     *  Called when the club or team pop up views resign first responder
+     */
+    func unwindFromPopUp() {
+        updateSettings()
+    }
+    
 
     // Called when the user selects a table cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

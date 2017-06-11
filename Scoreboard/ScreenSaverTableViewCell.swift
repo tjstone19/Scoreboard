@@ -26,6 +26,14 @@ class ScreenSaverTableViewCell: UITableViewCell {
     // Called when the user toggles the between screen saver on/off
     @IBAction func screenSwitchChange(_ sender: Any) {
         
-        //TODO save value to device
+        // create settings object and load saved settings
+        let settings: UserSettings = UserSettings()
+        settings.load()
+        
+        // update screen saver setting
+        settings.screenSaver = screenSwitch.isOn
+        
+        // save the new settings to the device
+        settings.save()
     }
 }
