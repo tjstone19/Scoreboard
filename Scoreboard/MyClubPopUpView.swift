@@ -8,15 +8,13 @@
 
 import UIKit
 
-class MyClubPopUpView: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MyClubPopUpView: PopUpPresenter, UITableViewDataSource, UITableViewDelegate  {
     
-    // Callback function to call before this view dismisses itself
-    var callBack: (() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(Constants.POP_UP_OPACITY)
         
         self.showAnimate()
     }
@@ -103,7 +101,7 @@ class MyClubPopUpView: UIViewController, UITableViewDataSource, UITableViewDeleg
         self.removeAnimate()
         
         // call the callback function to notify displaying view
-        callBack!()
+        callback!()
     }
     
 }

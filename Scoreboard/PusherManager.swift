@@ -111,7 +111,7 @@ class PusherManager: BackendManager {
             model.awayScore = aGame["away_goals"] as? String ?? ""
             model.time = aGame["time"] as? String
             model.date = aGame["date"] as? String
-            
+            model.division = aGame["level_name"] as? String
             // get game date
             if model.isUpcomingGame() {
                 //getScoreUpdateForGame(gameId: model.gameId!)

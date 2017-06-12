@@ -15,7 +15,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var gamesTable: UITableView!
     
     // Manages the connection with pusher
-    var pusherManager: BackendManager!
+    var pusherManager: BackendManager = (UIApplication.shared.delegate as! AppDelegate).pusherManager
     
     // Updated by Pusher Manager when game data is received.
     // Contains all games from TTS.
@@ -54,7 +54,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // background image
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
-        background.alpha = 0.4
+        background.alpha = Constants.BACKGROUND_IMAGE_OPACITY
   
         gamesTable.backgroundView = background
                 
@@ -68,18 +68,9 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
         // eliminates empty cell separator lines
         gamesTable.removeEmptyLines()
         
-        // Do any additional setup after loading the view.
-        if pusherManager != nil {
-            pusherManager.updateFunction = updateUI
-        }
-        else {
-            // CHANGE THIS LINE FROM TEST MANAGER TO REAL PUSHER MANAGER
-            pusherManager = TestPusherManager()
-            //pusherManager = PusherManager()
-
-            pusherManager.establishConnection()
-            pusherManager.updateFunction = updateUI
-        }
+        
+        // set pusher's update function to call this view when it receives an update
+        pusherManager.updateFunction = updateUI
     }
     
     private func forcePortrait() {
@@ -241,7 +232,7 @@ class GamesListViewController: UIViewController, UITableViewDelegate, UITableVie
             
             cell.dateLabel.text = game.userFriendlyDate!
             
-            cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+            cell.setBackgroundOpacity()
             
             gamesTable.separatorStyle = .singleLine
             
@@ -299,3 +290,8 @@ extension UITableView {
     }
 }
 
+extension UITableViewCell {
+    func setBackgroundOpacity() {
+        self.backgroundColor = UIColor.white.withAlphaComponent(Constants.BACKGROUND_OPACITY)
+    }
+}

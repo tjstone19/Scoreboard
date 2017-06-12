@@ -14,6 +14,7 @@
 		0816812C1DD0268300A53DE3 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */; };
 		081681301DD0297F00A53DE3 /* ScoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */; };
 		08264A9A1EC58EDF00D46C02 /* CAHALogoMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 08264A991EC58EDF00D46C02 /* CAHALogoMain.png */; };
+		082EAEE61EEE232F005BDEFF /* PopUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082EAEE51EEE232F005BDEFF /* PopUpPresenter.swift */; };
 		0832C9A71EC5421800EDEA3E /* Scoreboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0832C9A51EC5421800EDEA3E /* Scoreboard.storyboard */; };
 		0832C9AB1EC54F0E00EDEA3E /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */; };
 		085A7F3B1EE4FB27003CE989 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7F3A1EE4FB27003CE989 /* SettingsViewController.swift */; };
@@ -80,8 +81,6 @@
 		BDE6C7541EDE9C4D00CBEC06 /* Settings-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7521EDE9C4D00CBEC06 /* Settings-50.png */; };
 		BDE6C7571EDE9C6300CBEC06 /* User Groups Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7551EDE9C6300CBEC06 /* User Groups Filled-50.png */; };
 		BDE6C7581EDE9C6300CBEC06 /* User Groups-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7561EDE9C6300CBEC06 /* User Groups-50.png */; };
-		BDE6C75B1EDE9F7300CBEC06 /* Hockey Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C7591EDE9F7300CBEC06 /* Hockey Filled-50.png */; };
-		BDE6C75C1EDE9F7300CBEC06 /* Hockey-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE6C75A1EDE9F7300CBEC06 /* Hockey-50.png */; };
 		BDFADF601EDE8E0200E196F1 /* Teams Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFADF5E1EDE8E0200E196F1 /* Teams Filled-50.png */; };
 		BDFADF611EDE8E0200E196F1 /* Teams-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFADF5F1EDE8E0200E196F1 /* Teams-50.png */; };
 /* End PBXBuildFile section */
@@ -111,6 +110,7 @@
 		0816812B1DD0268300A53DE3 /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		0816812F1DD0297F00A53DE3 /* ScoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreListViewController.swift; sourceTree = "<group>"; };
 		08264A991EC58EDF00D46C02 /* CAHALogoMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CAHALogoMain.png; path = images/CAHALogoMain.png; sourceTree = SOURCE_ROOT; };
+		082EAEE51EEE232F005BDEFF /* PopUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPresenter.swift; sourceTree = "<group>"; };
 		0832C9A61EC5421800EDEA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Scoreboard.storyboard; sourceTree = "<group>"; };
 		0832C9AA1EC54F0E00EDEA3E /* GameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 		085A7F3A1EE4FB27003CE989 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +265,7 @@
 				085A7F4F1EE52A53003CE989 /* MyTeamPopUpView.swift */,
 				08F2938D1EE8FD85005D09CF /* MyClubViewController.swift */,
 				08F2938F1EE90190005D09CF /* MyTeamViewController.swift */,
+				082EAEE51EEE232F005BDEFF /* PopUpPresenter.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -518,7 +519,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "T.J. Stone";
 				TargetAttributes = {
 					08DC67C81DD0158400FD688C = {
@@ -585,7 +586,6 @@
 				08DC67D41DD0158400FD688C /* Assets.xcassets in Resources */,
 				0832C9A71EC5421800EDEA3E /* Scoreboard.storyboard in Resources */,
 				BDE6C7531EDE9C4D00CBEC06 /* Settings Filled-50.png in Resources */,
-				BDE6C75B1EDE9F7300CBEC06 /* Hockey Filled-50.png in Resources */,
 				BDE6C7571EDE9C6300CBEC06 /* User Groups Filled-50.png in Resources */,
 				0889CFC01E00DEE300B97075 /* tahoe-grizzlies-logo.jpg in Resources */,
 				0889CFB71E00DEE300B97075 /* cougars-logo.jpg in Resources */,
@@ -597,7 +597,6 @@
 				0889CFBF1E00DEE300B97075 /* stockton-colts-logo.gif in Resources */,
 				08DDE0631EDE7D96004166BC /* Hockey-50.png in Resources */,
 				0889CFB91E00DEE300B97075 /* jr-sharks-logo.jpg in Resources */,
-				BDE6C75C1EDE9F7300CBEC06 /* Hockey-50.png in Resources */,
 				08DC67D21DD0158400FD688C /* Main.storyboard in Resources */,
 				BDC55CDD1ED5736200A2D1AB /* background-ice1.jpg in Resources */,
 				BDE6C7541EDE9C4D00CBEC06 /* Settings-50.png in Resources */,
@@ -784,6 +783,7 @@
 				085A7F3F1EE500C8003CE989 /* SoundTableViewCell.swift in Sources */,
 				081681261DD0217C00A53DE3 /* ScoreboardViewController.swift in Sources */,
 				0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */,
+				082EAEE61EEE232F005BDEFF /* PopUpPresenter.swift in Sources */,
 				08DC67CD1DD0158400FD688C /* AppDelegate.swift in Sources */,
 				08849B071DE8E5F800DE41DB /* RosterViewController.swift in Sources */,
 				0816812C1DD0268300A53DE3 /* GameTableViewCell.swift in Sources */,

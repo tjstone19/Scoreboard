@@ -17,6 +17,9 @@ struct GameModel {
     var time: String?
     var date: String?
     
+    // ex: mite x,  squirt A, etc.
+    var division: String?
+    
     // Date object created by adding the GameModel's date and time strings together.
     var gameDate: Date? {
         

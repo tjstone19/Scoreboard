@@ -123,6 +123,7 @@ class TestPusherManager: BackendManager {
         model.awayScore = games["away_goals"] as? String
         model.time = games["time"] as? String
         model.date = games["date"] as? String
+        model.division = games["level_name"] as? String
 
         gamesArray.append(model)
         

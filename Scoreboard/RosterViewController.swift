@@ -33,7 +33,7 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // background image
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
-        background.alpha = 0.4
+        background.alpha = Constants.BACKGROUND_IMAGE_OPACITY
         
         rosterTable.backgroundView = background
         
@@ -88,7 +88,7 @@ class RosterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.goalsLabel.text = roster[indexPath.row].goals
         cell.assistsLabel.text = roster[indexPath.row].assists
         cell.pimsLabel.text = roster[indexPath.row].pims
-        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        cell.setBackgroundOpacity()
         
         return cell
     }

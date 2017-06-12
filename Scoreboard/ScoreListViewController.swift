@@ -27,7 +27,7 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
         
         // background image
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
-        background.alpha = 0.4
+        background.alpha = Constants.BACKGROUND_IMAGE_OPACITY
         
         scoreTable.backgroundView = background
         
@@ -108,7 +108,7 @@ class ScoreListViewController: UIViewController, UITableViewDataSource, UITableV
         cell.goalScorerLabel.text = goals[indexPath.row].goalScorer
         cell.assist1Label.text = goals[indexPath.row].assist1
         cell.assist2Label.text = goals[indexPath.row].assist2
-        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        cell.setBackgroundOpacity()
         
         return cell
     }

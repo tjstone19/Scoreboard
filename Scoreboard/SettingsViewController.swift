@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var settingsTable: UITableView!
     
@@ -56,7 +56,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     private func setupBackground() {
         // set up background
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
-        background.alpha = 0.4
+        background.alpha = Constants.BACKGROUND_IMAGE_OPACITY
         settingsTable.backgroundView = background
     }
     
@@ -136,12 +136,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         // background color
-        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        cell.setBackgroundOpacity()
         
         return cell
     }
     
-    // Instanciates pop up view with the given name
+    /// Instanciates pop up view with the given name
+    ///
+    /// @name: name of the pop up view controller to create
     private func createPopUpView(name: String) {
         var popOverVC: UIViewController?
         
@@ -151,26 +153,21 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                 popOverVC = UIStoryboard(name: "Scoreboard", bundle: nil).instantiateViewController(withIdentifier: name) as! MyClubPopUpView
                 
                 // set callback function: called when pop up is dismissed
-                (popOverVC as! MyClubPopUpView).callBack = unwindFromPopUp
+                (popOverVC as! MyClubPopUpView).callback = unwindFromPopUp
                 break
             case "MyTeamPopUpView":
                 popOverVC = UIStoryboard(name: "Scoreboard", bundle: nil).instantiateViewController(withIdentifier: name) as! MyTeamPopUpView
                 
                 // set callback function: called when pop up is dismissed
-                (popOverVC as! MyTeamPopUpView).callBack = unwindFromPopUp
+                (popOverVC as! MyTeamPopUpView).callback = unwindFromPopUp
                 break
             default:
-                break
+                // return if no pop up view was created
+                return
         }
         
-        // add pop up as child view
-        self.addChildViewController(popOverVC!)
-        popOverVC?.view.frame = self.view.frame
-        
-       
-        // add pop up to view
-        self.view.addSubview((popOverVC?.view)!)
-        popOverVC?.didMove(toParentViewController: self)
+        // present the pop up view
+        presentPopUp(popOverVC: popOverVC as! PopUpPresenter, callback: unwindFromPopUp)
     }
    
     /**
@@ -197,5 +194,30 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         // unhighlight selected cell
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension UIViewController {
+    /**
+     *  Presents the pop up view controller over this view.
+     *
+     * @popOverVC: pop up view controller to present.
+     */
+    func presentPopUp(popOverVC: PopUpPresenter, callback: @escaping () -> Void) {
+        
+        let popOverVC = popOverVC
+        
+        popOverVC.callback = callback
+        
+        // add pop up as child view
+        self.addChildViewController(popOverVC as UIViewController)
+        popOverVC.view.frame = self.view.frame
+        
+        
+        // add pop up to view
+        self.view.addSubview((popOverVC.view)!)
+        
+        // set pop up view's parent view controller
+        popOverVC.didMove(toParentViewController: self)
     }
 }

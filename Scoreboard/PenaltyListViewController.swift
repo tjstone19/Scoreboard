@@ -36,7 +36,7 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
 
         // background image
         background.image = #imageLiteral(resourceName: "background-ice1.jpg")
-        background.alpha = 0.4
+        background.alpha = Constants.BACKGROUND_IMAGE_OPACITY
         
         penaltyTable.backgroundView = background
         
@@ -119,7 +119,7 @@ class PenaltyListViewController: UIViewController, UITableViewDelegate, UITableV
         cell.playerLabel.text = penaltys[indexPath.row].player
         cell.typeLabel.text = penaltys[indexPath.row].type
         cell.lengthLabel.text = penaltys[indexPath.row].length
-        cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        cell.setBackgroundOpacity()
         
         return cell
     }

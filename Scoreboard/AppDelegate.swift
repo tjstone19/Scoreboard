@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Keeps track of the amount of goals missed while the app is in the background
     var goalsMissed = 0
 
+    
+    // Manages the connection with pusher
+    var pusherManager: BackendManager = TestPusherManager()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         goalsMissed = 0
@@ -21,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: { granted, error in
             // handle error if there is one
         })
+        
+        // connect to pusher
+        pusherManager.establishConnection()
         
         return true
     }
