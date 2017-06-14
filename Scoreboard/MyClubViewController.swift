@@ -147,6 +147,22 @@ class MyClubViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return displayedGames.count
     }
     
+    
+    /**
+     *  Use this in cell for row to highlight the selected club's cell
+     */
+    private func indexForFavoriteClub() -> Int? {
+        var ret: Int?
+        
+        // return nil if user has not set their club
+        guard let club = settings.club else {return nil}
+        
+        // get the index for their club
+        ret = Constants.CLUBS.index(of: club)
+        
+        return ret
+    }
+    
     /**
      *  Creates the cell to be displayed at the given row.
      */
@@ -175,6 +191,7 @@ class MyClubViewController: UIViewController, UITableViewDelegate, UITableViewDa
             gameCell.awayLogo?.image = Constants.getLogo(team: game.awayTeam!)
             
             gameCell.dateLabel.text = game.userFriendlyDate!
+            
             
             // set the return value to the game cell
             cell = gameCell
