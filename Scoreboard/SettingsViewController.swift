@@ -219,5 +219,6 @@ extension UIViewController {
         
         // set pop up view's parent view controller
         popOverVC.didMove(toParentViewController: self)
+        
     }
 }

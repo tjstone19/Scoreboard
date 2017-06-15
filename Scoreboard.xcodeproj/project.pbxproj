@@ -51,6 +51,7 @@
 		08AB57C51DD16B7A00E354E4 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB57C41DD16B7A00E354E4 /* ScoreModel.swift */; };
 		08AB57C71DD16C1800E354E4 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB57C61DD16C1800E354E4 /* PlayerModel.swift */; };
 		08AB58051DD172D100E354E4 /* PenaltyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB58041DD172D100E354E4 /* PenaltyModel.swift */; };
+		08B5CBD11EF1FE3A0000B1E8 /* MenuPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B5CBD01EF1FE3A0000B1E8 /* MenuPopUp.swift */; };
 		08D935151DE4F813002A63DE /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D935141DE4F813002A63DE /* Encryptor.swift */; };
 		08DC67CD1DD0158400FD688C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC67CC1DD0158400FD688C /* AppDelegate.swift */; };
 		08DC67D21DD0158400FD688C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DC67D01DD0158400FD688C /* Main.storyboard */; };
@@ -147,6 +148,7 @@
 		08AB57C41DD16B7A00E354E4 /* ScoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		08AB57C61DD16C1800E354E4 /* PlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 		08AB58041DD172D100E354E4 /* PenaltyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenaltyModel.swift; sourceTree = "<group>"; };
+		08B5CBD01EF1FE3A0000B1E8 /* MenuPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPopUp.swift; sourceTree = "<group>"; };
 		08D935111DE4F74E002A63DE /* Scoreboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scoreboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		08D935141DE4F813002A63DE /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
 		08DC67C91DD0158400FD688C /* Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +268,7 @@
 				08F2938D1EE8FD85005D09CF /* MyClubViewController.swift */,
 				08F2938F1EE90190005D09CF /* MyTeamViewController.swift */,
 				082EAEE51EEE232F005BDEFF /* PopUpPresenter.swift */,
+				08B5CBD01EF1FE3A0000B1E8 /* MenuPopUp.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				085A7F3F1EE500C8003CE989 /* SoundTableViewCell.swift in Sources */,
 				081681261DD0217C00A53DE3 /* ScoreboardViewController.swift in Sources */,
 				0888BA091DD159ED00C2B1F9 /* GameModel.swift in Sources */,
+				08B5CBD11EF1FE3A0000B1E8 /* MenuPopUp.swift in Sources */,
 				082EAEE61EEE232F005BDEFF /* PopUpPresenter.swift in Sources */,
 				08DC67CD1DD0158400FD688C /* AppDelegate.swift in Sources */,
 				08849B071DE8E5F800DE41DB /* RosterViewController.swift in Sources */,

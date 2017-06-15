@@ -24,16 +24,15 @@ class MyClubViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Contains user's preferred club.
     var settings: UserSettings = UserSettings()
     
+    // Set if the view is displaying a pop up view.
+    var popUp: PopUpPresenter?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         // set up background
         setupTable()
-        
-        // load the user's saved settings
-        settings.load()
-        
-        popUpCallback()
     }
     
     /**
@@ -41,6 +40,27 @@ class MyClubViewController: UIViewController, UITableViewDelegate, UITableViewDa
      */
     override func viewDidAppear(_ animated: Bool) {
         popUpCallback()
+    }
+    
+    /**
+     *  Called before the app segues to another view.
+     *
+     *  Removes any pop up view's that are on the screen.
+     */
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        removePopUpView(view: popUp)
+    }
+
+    
+    /**
+     *  Display's the drop down menu.
+     *  Drop down menu is displayed as a pop up view.
+     */
+    @IBAction func settingsButtonPressed(_ sender: Any) {
+        
+        showPopUp(named: "MenuPopUp")
     }
     
     /**
@@ -56,7 +76,7 @@ class MyClubViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // show club and team pop up views if settings are not set
         if settings.club == nil {
-            showClubPopUp()
+            showPopUp(named: "MyClubPopUpView")
         }
         else {
             
@@ -65,14 +85,18 @@ class MyClubViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
 
-    
     /**
      *  Creates a Club pop up view and provides the callback function called when
      *  the pop up view closes.
      */
-    private func showClubPopUp() {
+    private func showPopUp(named: String) {
         let vc: PopUpPresenter =
-            UIStoryboard(name: "Scoreboard", bundle: nil).instantiateViewController(withIdentifier: "MyClubPopUpView") as! MyClubPopUpView
+            UIStoryboard(name: "Scoreboard", bundle: nil)
+                .instantiateViewController(withIdentifier: named) as! PopUpPresenter
+        
+        // assign the current pop up view.
+        // (so we can dismiss the pop up if the user leaves this view)
+        self.popUp = vc
         
         // present pop up
         presentPopUp(popOverVC: vc, callback: popUpCallback)

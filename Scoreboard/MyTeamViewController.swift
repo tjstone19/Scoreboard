@@ -24,23 +24,40 @@ class MyTeamViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Contains user's preferred club.
     var settings: UserSettings = UserSettings()
     
+    // Set if the view is displaying a pop up view.
+    var popUp: PopUpPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // set up background
         setupTable()
-        
-        
-        popUpCallback()
+    }
+    
+    
+    /**
+     *  Display's the drop down menu.
+     *  Drop down menu is displayed as a pop up view.
+     */
+    @IBAction func settingsButtonPressed(_ sender: Any) {
+        showPopUp(named: "MenuPopUp")
     }
     
     /**
      *  Updates the list of games for the user's favorite teams
      */
     override func viewDidAppear(_ animated: Bool) {
+        
         popUpCallback()
     }
     
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        removePopUpView(view: popUp)
+    }
     
     /**
      *  Creates a Club pop up view and provides the callback function called when
@@ -50,6 +67,10 @@ class MyTeamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let vc: PopUpPresenter =
             UIStoryboard(name: "Scoreboard", bundle: nil)
                 .instantiateViewController(withIdentifier: named) as! PopUpPresenter
+        
+        // assign the current pop up view. 
+        // (so we can dismiss the pop up if the user leaves this view)
+        self.popUp = vc
         
         // present pop up
         presentPopUp(popOverVC: vc, callback: popUpCallback)
@@ -212,5 +233,18 @@ class MyTeamViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView,
                    estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+}
+
+extension UIViewController {
+    /**
+     *  Removes the pop up view
+     */
+    func removePopUpView(view: PopUpPresenter?) {
+        // remove pop up view on the screen if popUp is not nil
+        if let popUp = view {
+            popUp.view.removeFromSuperview()
+            popUp.removeFromParentViewController()
+        }
     }
 }

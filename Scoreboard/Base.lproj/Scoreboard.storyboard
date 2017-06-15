@@ -63,7 +63,15 @@
                                     <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="My Club" id="SzP-Ku-fDe"/>
+                                    <navigationItem title="My Club" id="SzP-Ku-fDe">
+                                        <barButtonItem key="rightBarButtonItem" image="Settings Filled-50.png" width="8" id="rek-R6-WOT">
+                                            <inset key="imageInsets" minX="34" minY="8" maxX="-18" maxY="8"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="settingsButtonPressed:" destination="zxV-CM-7wT" id="6Hy-OG-jPg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -179,11 +187,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="283" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JW7-eB-pVF" id="mlL-Db-IJ0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4MU-6i-FXO">
-                                                            <rect key="frame" x="15" y="0.0" width="253" height="43"/>
+                                                            <rect key="frame" x="15" y="0.0" width="253" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -258,7 +266,15 @@
                                     <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="My Team" id="sJJ-YG-Qwj"/>
+                                    <navigationItem title="My Team" id="sJJ-YG-Qwj">
+                                        <barButtonItem key="rightBarButtonItem" image="Settings Filled-50.png" width="8" id="uED-d4-vKe">
+                                            <inset key="imageInsets" minX="34" minY="8" maxX="-18" maxY="8"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="settingsButtonPressed:" destination="6wc-wd-Nmu" id="FPF-uh-R14"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -306,7 +322,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Spy-a9-bnr" id="hzd-Np-b23">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -328,7 +344,7 @@
                     <tabBarItem key="tabBarItem" title="Today's Games" id="GvS-vX-vFe"/>
                     <navigationItem key="navigationItem" id="X1b-zh-Eay">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="EYe-Ef-wNN">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="EYe-Ef-wNN">
                             <rect key="frame" x="111" y="7" width="153" height="30"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             <segments>
@@ -366,7 +382,7 @@
                     <tabBarItem key="tabBarItem" title="" image="Hockey-50.png" selectedImage="Hockey Filled-50.png" id="CBE-mV-lHG">
                         <inset key="imageInsets" minX="1" minY="7" maxX="1" maxY="-5"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="XPv-0Q-VgO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="XPv-0Q-VgO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -384,6 +400,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rm6-FX-ct0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3831" y="-74"/>
+        </scene>
+        <!--Menu Pop Up-->
+        <scene sceneID="VAc-Ie-dH5">
+            <objects>
+                <viewController restorationIdentifier="MenuPopUp" storyboardIdentifier="MenuPopUp" id="m2t-X7-A0U" customClass="MenuPopUp" customModule="Scoreboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zqz-5s-xn6"/>
+                        <viewControllerLayoutGuide type="bottom" id="alt-qZ-vJZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h2l-Le-bVr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-Io-1to">
+                                <rect key="frame" x="191" y="44" width="184" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MenuCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="LeD-Nd-kAs" style="IBUITableViewCellStyleDefault" id="1NF-nG-BtJ">
+                                        <rect key="frame" x="0.0" y="28" width="184" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1NF-nG-BtJ" id="xsa-kq-Uvv">
+                                            <rect key="frame" x="0.0" y="0.0" width="184" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LeD-Nd-kAs">
+                                                    <rect key="frame" x="15" y="0.0" width="154" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="m2t-X7-A0U" id="nE5-uD-94E"/>
+                                    <outlet property="delegate" destination="m2t-X7-A0U" id="IzL-ze-EaP"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7u-wO-PmA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.0" green="0.47058823529999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="Vgf-fW-Vit">
+                                        <barButtonItem key="rightBarButtonItem" image="Settings Filled-50.png" width="8" id="AIB-Nb-fAI">
+                                            <inset key="imageInsets" minX="34" minY="8" maxX="-18" maxY="8"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="closePressed:" destination="m2t-X7-A0U" id="cTH-AP-5QT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuTable" destination="hlD-Io-1to" id="D1f-m4-XA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KT4-vR-0qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.60000000000002" y="-747.07646176911555"/>
         </scene>
         <!--My Team Pop Up View-->
         <scene sceneID="YsS-6N-gvP">
@@ -408,11 +496,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="283" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iGk-JT-nJc" id="Kkd-Gh-GBh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="id6-iP-ZTZ">
-                                                            <rect key="frame" x="15" y="0.0" width="253" height="43"/>
+                                                            <rect key="frame" x="15" y="0.0" width="253" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
