@@ -39,8 +39,8 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     var gameData: ScoreboardModel?
     
     // Set by the game view controller.
-    // Provides updates when data is received.
-    var pusherManager: BackendManager?
+    // Manages the connection with pusher
+    var pusherManager: BackendManager = (UIApplication.shared.delegate as! AppDelegate).pusherManager
     
     var firstUpdate: Bool = true
     
@@ -62,7 +62,10 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
         forceLandscape()
         
         // Set update function for pusher manager to call when there is an update
-        pusherManager?.updateFunction = updateUI
+        pusherManager.updateFunction = updateUI
+        
+        // set the game to be displayed
+        currentGame = pusherManager.currentGame
         
         // Set nav bar title text
         self.navigationItem.title = (currentGame?.homeTeam)! + " vs " + (currentGame?.awayTeam)!
@@ -128,7 +131,7 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     // Resets the goals missed count to 0
     // Updates the UI to display current game status.
     override func viewDidAppear(_ animated: Bool) {
-        pusherManager?.updateFunction = updateUI
+        pusherManager.updateFunction = updateUI
         setUpNavBar()
         updateUI()
     }
@@ -186,7 +189,7 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
     
     // Called by pusher manager when an update is received.
     func updateUI() {
-        let model: ScoreboardModel = (pusherManager?.scoreboard)!
+        let model: ScoreboardModel = pusherManager.scoreboard
         let _: String? = homeScoreLabel.text
         let _: String? = awayScoreLabel.text
         
@@ -233,38 +236,38 @@ class ScoreboardViewController: UIViewController, AVAudioPlayerDelegate {
         switch segue.identifier! {
         case "homeScore":
             let dest: ScoreListViewController = segue.destination as! ScoreListViewController
-            pusherManager?.updateFunction = dest.updateUI
+            pusherManager.updateFunction = dest.updateUI
             dest.isHome = true
             dest.pusherManager = self.pusherManager
             break
         case "awayScore":
             let dest: ScoreListViewController = segue.destination as! ScoreListViewController
-            pusherManager?.updateFunction = dest.updateUI
+            pusherManager.updateFunction = dest.updateUI
             dest.isHome = false
             dest.pusherManager = self.pusherManager
             break
         case "homePenalty":
             let dest: PenaltyListViewController = segue.destination as! PenaltyListViewController
-            pusherManager?.updateFunction = dest.updateUI
+            pusherManager.updateFunction = dest.updateUI
             dest.isHome = true
             dest.pusherManager = self.pusherManager
             break
         case "awayPenalty":
             let dest: PenaltyListViewController = segue.destination as! PenaltyListViewController
-            pusherManager?.updateFunction = dest.updateUI
+            pusherManager.updateFunction = dest.updateUI
             dest.isHome = false
             dest.pusherManager = self.pusherManager
             break
         case "homeRoster":
             let dest: RosterViewController = segue.destination as! RosterViewController
             dest.isHome = true
-            pusherManager?.updateFunction = dest.updateUI
+            pusherManager.updateFunction = dest.updateUI
             dest.pusherManager = self.pusherManager
             break
         case "awayRoster":
             let dest: RosterViewController = segue.destination as! RosterViewController
             dest.isHome = false
-            pusherManager?.updateFunction = dest.updateUI
+            pusherManager.updateFunction = dest.updateUI
             dest.pusherManager = self.pusherManager
             break
         default:
